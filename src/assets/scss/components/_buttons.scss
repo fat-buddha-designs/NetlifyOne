@@ -1,0 +1,92 @@
+/* -- Buttons -- */
+
+// Default button
+button {
+  padding: var(--space-xs) var(--space-sm);
+  color: var(--color-pri);
+  text-decoration: none;
+  background: transparent;
+  border: var(--bor);
+  border-radius: var(--bor-rad);
+  outline: none;
+  cursor: pointer;
+  transition: all var(--dur) var(--trans);
+
+  &:focus,
+  &:hover {
+    color: var(--color-wh);
+    text-decoration: none;
+    background: var(--color-pri);
+    border-color: var(--color-pri);
+  }
+
+  &:active {
+    background: var(--color-pri-drk);
+    border-color: var(--color-pri-drk);
+  }
+
+  &.full--width {
+    min-width: 100%;
+  }
+}
+
+.button {
+  padding: var(--space-xs) var(--space-sm);
+  text-decoration: none;
+  color: var(--color-wh);
+  background-color: var(--color-pri);
+  border: var(--bor);
+  border-radius: var(--bor-rad);
+  outline: none;
+  cursor: pointer;
+  transition: all var(--dur) var(--trans);
+
+  &:focus,
+  &:hover {
+    background: var(--color-pri-drk);
+  }
+
+  &.active {
+    background: var(--color-pri-lgt);
+
+    &:focus,
+    &:hover {
+      background: var(--color-pri);
+    }
+  }
+
+  &.full--width {
+    min-width: 100%;
+  }
+
+  &.rounded {
+    border-radius: 999px;
+  }
+  &.button--large {
+    padding: var(--space-sm) var(--space-unit);
+    font-size: 1.1em;
+  }
+  &.button--small {
+    padding: var(--space-xxs) var(--space-xs);
+    font-size: 0.812em;
+  }
+}
+
+
+// Link button - a button that looks like a link
+.button--link {
+  color: var(--color-pri);
+  text-transform: none;
+  text-shadow: none;
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+  transition: all var(--dur) var(--trans);
+
+  &:focus,
+  &:hover {
+    color: var(--color-pri);
+    text-decoration: underline;
+    background: transparent;
+  }
+}

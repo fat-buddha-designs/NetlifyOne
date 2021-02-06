@@ -1,0 +1,196 @@
+/* -- Form Elements -- */
+
+form {
+  background-color: transparent;
+
+  ul li {
+    display: block;
+    margin-top: 0;
+  }
+
+  .form--row,
+  .textarea--row {
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+
+    div {
+      width: 100%;
+    }
+
+    label {
+      margin-top: 1em;
+      margin-bottom: 0.2em;
+      padding: 0;
+    }
+  }
+
+  fieldset {
+    padding: 0 1em;
+  }
+
+  legend {
+    padding: 0 0.3em;
+    font-weight: 600;
+    font-size: 1.5em;
+  }
+
+  label {
+    display: block;
+    font-size: 0.9em;
+  }
+
+  input {
+    margin-bottom: 0;
+  }
+
+  /* Text fields */
+
+  textarea,
+  select,
+  input:not([type="checkbox"]):not([type="file"]):not([type="image"]):not([type="radio"]):not([type="range"]) {
+    margin-bottom: 0;
+    padding: 0.6rem 1rem;
+    text-align: left;
+    border: var(--bor-lg);
+    border-radius: var(--bor-rad);
+    transition: all var(--dur) var(--trans);
+
+    &.full--width {
+      width: 100%;
+    }
+  }
+
+
+  /* Focus */
+
+  textarea:focus,
+  input:not([type="checkbox"]):not([type="file"]):not([type="image"]):not([type="radio"]):not([type="range"]):focus {
+    outline: 0.15em solid var(--color-pri);
+    box-shadow: 0 0 0.2em var(--color-pri);
+  }
+
+  /* Read-only */
+
+  textarea[readonly],
+  input:not([type="checkbox"]):not([type="file"]):not([type="image"]):not([type="radio"]):not([type="range"])[readonly] {
+    border-color: rgba(0, 0, 0, 0.42);
+    border-top: none;
+    border-right: none;
+    border-left: none;
+  }
+
+  /* Errored */
+
+  textarea[aria-invalid="true"],
+  textarea[aria-invalid="spelling"],
+  textarea[aria-invalid="grammar"],
+  input:not([type="checkbox"]):not([type="file"]):not([type="image"]):not([type="radio"]):not([type="range"])[aria-invalid] {
+    background: linear-gradient(135deg,
+        rgba(255, 0, 0, 1) 0,
+        rgba(255, 0, 0, 1) 0.4em,
+        rgba(255, 0, 0, 1) 0.4em);
+  }
+
+  /* Required */
+
+  textarea[required],
+  input:not([type="checkbox"]):not([type="file"]):not([type="image"]):not([type="radio"]):not([type="range"])[required] {
+    border-left: 0.3em solid var(--color-orange);
+  }
+
+  textarea {
+    margin-bottom: 1em;
+
+    &.full--width {
+      width: 100%;
+    }
+  }
+
+  /* Submit */
+
+  input[type="submit"] {
+    margin: 0;
+    text-align: center !important;
+    color: var(--color-wh);
+    text-transform: uppercase;
+    background: var(--color-pri);
+    border: var(--bor-lg);
+    border-radius: var(--bor-rad);
+    transition: all var(--dur) var(--trans);
+    box-shadow: var(--use-shadow);
+
+    &:focus,
+    &:hover {
+      background: var(--color-pri-drk);
+      border-radius: 999px;
+    }
+
+    &.full--width {
+      width: 100%;
+    }
+  }
+
+  select {
+    font-family: var(--base-font);
+    background: url('/assets/images/caret-down.svg') 98% / 15%;
+    background-repeat: no-repeat, repeat;
+    background-size: 10px, 15px 15px, 15px 15px, 15px 60%;
+    appearance: none;
+    user-select: none;
+
+    &.full--width {
+      width: 100%;
+    }
+  }
+
+  input[type=date] {
+    background: url('/assets/images/calendar.svg') 98% / 15%;
+    background-color: transparent;
+    background-repeat: no-repeat, repeat;
+    background-size: 15px, 20px 20px, 20px 20px, 20px 60%;
+
+    &.full--width {
+      width: 100%;
+    }
+  }
+
+  input[type=date]::-webkit-inner-spin-button {
+    display: none;
+  }
+
+  input[type=date]::-webkit-calendar-picker-indicator {
+    opacity: 0;
+  }
+
+
+  input:-webkit-autofill,
+  input:-webkit-autofill:active,
+  input:-webkit-autofill:focus,
+  input:-webkit-autofill:hover {
+    transition: background-color 5000s ease-in-out 0s;
+    -webkit-text-fill-color: var(--color-pri);
+  }
+}
+
+@include respond-to(sm) {
+  form {
+
+    .form--row {
+      flex-direction: row;
+      justify-content: space-between;
+
+      div:first-of-type {
+        margin-right: 2%;
+      }
+
+      div:last-of-type {
+        margin-right: 2%;
+      }
+
+      input:not([type="checkbox"]):not([type="file"]):not([type="image"]):not([type="radio"]):not([type="range"]) {
+        flex: 1 0 220px;
+      }
+    }
+  }
+}

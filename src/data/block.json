@@ -1,0 +1,40 @@
+{
+  "block": [
+    {
+      "img": "brand.jpg",
+      "alt": "cans showing different brands",
+      "title": "Websites",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, ducimus consectetur! Temporibus magnam commodi omnis harum accusantium"
+    },
+    {
+      "img": "code.jpg",
+      "alt": "computer screen showing code",
+      "title": "Apps",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, ducimus consectetur! Temporibus magnam commodi omnis harum accusantium"
+    },
+    {
+      "img": "develop.jpg",
+      "alt": "computer on desk",
+      "title": "Intranets",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, ducimus consectetur! Temporibus magnam commodi omnis harum accusantium"
+    },
+    {
+      "img": "code.jpg",
+      "alt": "computer screen showing code",
+      "title": "Blogs",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, ducimus consectetur! Temporibus magnam commodi omnis harum accusantium"
+    },
+    {
+      "img": "develop.jpg",
+      "alt": "computer on desk",
+      "title": "Headless CMS",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, ducimus consectetur! Temporibus magnam commodi omnis harum accusantium"
+    },
+    {
+      "img": "brand.jpg",
+      "alt": "cans showing different brands",
+      "title": "Awesomeeness",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, ducimus consectetur! Temporibus magnam commodi omnis harum accusantium"
+    }
+  ]
+}

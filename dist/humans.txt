@@ -1,0 +1,44 @@
+/* PROJECT */
+
+	Site Name:   Medium
+	Site URL:    https://www.medium.co.uk
+	Last update: 13/01/2020
+	Standards:   HTML5, CSS3
+	Components:  jQuery,Webpack,Gridsome,Vue.js
+	Software:    Visual Code Studio
+	Plugins:     None
+	Web Design:  Will Moody @ Fat Buddha Designs
+    Langauge:    English
+
+/* AUTHOR */
+
+	Name:        Will Moody
+	Nickname:    Fat Buddha
+	Title:       CEO, Fat Buddha Designs
+	Location:    Norwich, United Kingdom
+	Site:        https://www.fatbuddhadesigns.co.uk
+	Site:        -
+	Blog:        https://www.fatbuddhadesigns.co.uk/journal
+	Contact:     https://www.fatbuddhadesigns.co.uk/contact
+	Donation:    -
+
+/* SOCIAL */
+
+	About.me:    -
+	Linkedin:    -
+	Twitter:     -
+	Plugins:     -
+	Themes:      -
+	Facebook:    -
+	Google+:     -
+	Instagram:   -
+	YouTube:     -
+	Tumblr:      -
+
+/* META */
+
+	Built with: Visual Code Studio, Gridsome, HTML, CSS, jQuery, Webpack, .htaccess :)
+
+/* THANKS */
+
+	To everyone who shares, likes, comments, and contributes!

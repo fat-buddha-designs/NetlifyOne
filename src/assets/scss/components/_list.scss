@@ -1,0 +1,70 @@
+/* -- lists -- */
+
+ul {
+  margin-bottom: var(--space-unit);
+  list-style: none outside none;
+  white-space: nowrap;
+
+  li {
+    list-style-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=");
+    word-break: keep-all;
+    white-space: normal;
+    line-height: var(--line-height-list);
+  }
+
+  li:before {
+    content: none;
+  }
+}
+
+ol {
+  margin-bottom: var(--space-unit);
+  list-style: decimal outside none;
+  white-space: nowrap;
+  counter-reset: ol-counter;
+
+  li {
+    list-style-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=");
+    word-break: keep-all;
+    white-space: normal;
+    counter-increment: ol-counter;
+    line-height: var(--line-height-list);
+  }
+
+  li:before {
+    content: counter(ol-counter) ". ";
+    color: var(--color-sec);
+  }
+}
+
+dl {
+  display: grid;
+  margin: 1em;
+  line-height: 1.6;
+  grid-template-columns: auto 1fr;
+  grid-column-gap: 1em;
+  grid-row-gap: 0.5em;
+}
+
+dt {
+  position: relative;
+  overflow: hidden;
+  font-weight: bold;
+  grid-column: 1;
+}
+
+dd {
+  margin-left: 0;
+  grid-column: 2;
+}
+
+dt::after {
+  content: '';
+  position: absolute;
+  top: 0.8em;
+  width: 100%;
+  margin-left: 0.75em;
+  border-bottom: var(--bor-dot);
+}
+
+

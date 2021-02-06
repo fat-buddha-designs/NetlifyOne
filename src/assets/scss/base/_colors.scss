@@ -1,0 +1,66 @@
+  // colors
+  :root {
+    // primary color
+    --color-pri-drk: hsl(var(--pri-hue), 100%, 40%);
+    --color-pri: hsl(var(--pri-hue), 100%, 50%);
+    --color-pri-lgt: hsl(var(--pri-hue), 100%, 60%);
+
+    // secondary color
+    --color-sec-drk: hsl(var(--sec-hue), 100%, 40%);
+    --color-sec: hsl(var(--sec-hue), 100%, 50%);
+    --color-sec-lgt: hsl(var(--sec-hue), 100%, 60%);
+
+    // black + white
+    --color-blk: #000000;
+    --color-wh: #ffffff;
+
+    // pale
+    --color-p: hsl(0, 0%, 92%);
+    --color-p-1: hsl(0, 0%, 95%);
+    --color-p-2: hsl(0, 0%, 98%);
+
+    //greys
+    --color-g-1: #f5f5f5;
+    --color-g-2: #e0e0e0;
+    --color-g-3: #c7c7c7;
+    --color-g-4: #adadad;
+    --color-g-5: #999999;
+    --color-g-6: #858585;
+    --color-g-7: #737373;
+    --color-g-8: #616161;
+    --color-g-9: #4f4f4f;
+    --color-g-10: #3d3d3d;
+    --color-g-11: #2b2b2b;
+    --color-g-12: #1a1a1a;
+
+    // Orange
+    --orange-hue: 30;
+    --color-orange-drk: hsl(var(--orange-hue), 100%, 40%);
+    --color-orange: hsl(var(--orange-hue), 100%, 50%);
+    --color-orange-lgt: hsl(var(--orange-hue), 100%, 60%);
+
+    // Red
+    --red-hue: 0;
+    --color-red-drk: hsl(var(--red-hue), 100%, 40%);
+    --color-red: hsl(var(--red-hue), 100%, 50%);
+    --color-red-lgt: hsl(var(--red-hue), 100%, 60%);
+
+    // Green
+    --green-hue: 120;
+    --color-green-drk: hsl(var(--green-hue), 100%, 40%);
+    --color-green: hsl(var(--green-hue), 100%, 50%);
+    --color-green-lgt: hsl(var(--green-hue), 100%, 60%);
+
+    // Yellow
+    --yellow-hue: 60;
+    --color-yellow-drk: hsl(var(--yellow-hue), 100%, 40%);
+    --color-yellow: hsl(var(--yellow-hue), 100%, 50%);
+    --color-yellow-lgt: hsl(var(--yellow-hue), 100%, 60%);
+
+    --f-color: var(--color-g-8);
+    --bkg-color: var(--color-wh);
+
+    --scrollbarBG: var(--color-p);
+    --thumbBG: var(--color-pri);
+  }
+

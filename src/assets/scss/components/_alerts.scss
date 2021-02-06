@@ -1,0 +1,81 @@
+/* -- Alerts & Notifications -- */
+
+.alert {
+  position: relative;
+  padding: var(--space-sm) var(--space-xs);
+  line-height: var(--line-height);
+  border-left: 3px solid;
+  border-radius: var(--bor-rad);
+	cursor: pointer;
+  &:before,
+	&:after {
+		content: "";
+		position: absolute;
+		top: 10px;
+		right: 30px;
+		width: 4px;
+		height: 16px;
+		border-radius: 40px;
+	}
+	&:before {
+    transform: rotate(45deg) translateY(-5.5px) translateX(13.5px);
+	}
+	&:after {
+		transform: rotate(-45deg) translateY(13.5px) translateX(5.5px);
+	}
+
+  p {
+    margin: 0;
+    padding: 0;
+  }
+
+  &.alert-danger {
+    color: var(--color-red-drk);
+    background: var(--color-red-lgt);
+    border-color: var(--color-red);
+    &:before,
+    &:after {
+      background: var(--color-red-drk);
+    }
+  }
+
+  &.alert-success {
+    color: var(--color-green-drk);
+    background: var(--color-green-lg);
+    border-color: var(--color-green);
+    &:before,
+    &:after {
+      background: var(--color-green-drk);
+    }
+  }
+
+  &.alert-warning {
+    color: var(--color-orange-drk);
+    background: var(--color-orange-lgt);
+    border-color: var(--color-orange);
+    &:before,
+    &:after {
+      background: var(--color-orange-drk);
+    }
+  }
+
+  &.alert-info {
+    color: var(--color-yellow-drk);
+    background: var(--color-yellow-lgt);
+    border-color: var(--color-yellow);
+    &:before,
+    &:after {
+      background: var(--color-yellow-drk);
+    }
+  }
+
+  &.alert-empty {
+    text-align: center;
+    background: #f4f4f4;
+    border: var(--bor-width) dashed var(--color-p-2);
+  }
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+}

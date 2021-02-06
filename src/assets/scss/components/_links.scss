@@ -1,0 +1,14 @@
+/* -- links -- */
+
+a {
+  color: var(--color-sec);
+  text-decoration: none;
+  cursor: pointer;
+  transition: all var(--dur) var(--trans);
+
+  &:focus,
+  &:hover {
+    color: var(--color-sec-drk);
+    text-decoration: none;
+  }
+}

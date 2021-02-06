@@ -1,0 +1,28 @@
+// Tables
+
+table {
+	/* border-collapse sets the table's elements to share borders, rather than floating as separate "boxes". */
+	border-collapse: collapse;
+	width: 100%;
+}
+
+td,
+th {
+	border: var(--bor-lg);
+	text-align: left;
+	padding: .5rem;
+}
+
+th {
+	background: var(--color-g-2);
+}
+
+tr:nth-child(even) {
+	/* Set every other cell slightly darker. Improves readability. */
+	background: var(--color-g-2);
+}
+
+table caption {
+	font-weight: bold;
+	margin-bottom: .5rem;
+}

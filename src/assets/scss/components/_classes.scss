@@ -1,0 +1,110 @@
+// Other Useful Reusable Styles
+
+.text--center {
+  text-align: center;
+}
+
+.text--right {
+  text-align: right;
+}
+
+.text--left {
+  text-align: left;
+}
+
+.valign {
+  vertical-align: middle;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+hr {
+  border: 0;
+  border-bottom: var(--bor-width) solid var(--color-g-5);
+  margin: 1em 20%;
+}
+
+.is--obscure {
+  display: block;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(1px);
+  visibility: hidden;
+  white-space: nowrap;
+  position: absolute;
+}
+
+.is--hidden {
+  display: none;
+}
+
+.full--width {
+  width: 100%;
+}
+
+.full--bleed {
+  width: 100vw;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  margin-top: 1em;
+}
+
+
+.is--inline {
+  display: inline-block;
+}
+
+.centered--both {
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+.centered--axis {
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: center;
+}
+
+.centered--crossaxis {
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: flex-start;
+}
+
+.is--blocked {
+  display: inline-block;
+  border: var(--bor);
+  border-radius: var(--bor-rad);
+  margin: 0.2em;
+  padding: 0.1em;
+  font-size: 0.9em;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+}
+
+@include respond-to(sm) {
+  .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
