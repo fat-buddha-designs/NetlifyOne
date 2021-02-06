@@ -7,5 +7,5 @@ User-agent: *
 Allow: /
 Disallow: /search
 Crawl-delay: 10
-Sitemap: https://mediumthree.co.uk/sitemap.xml
-Host: https://mediumthree.co.uk
+Sitemap: https://netlifyone.co.uk/sitemap.xml
+Host: https://netlifyone.co.uk

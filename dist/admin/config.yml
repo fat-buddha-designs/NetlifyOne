@@ -1,0 +1,59 @@
+backend:
+  name: github
+  branch: master
+  repo: fatbuddhadesigns/Maximum
+
+media_folder: "static/images/uploads" # Media files will be stored in the repo under static/images/uploads
+public_folder: "/images/uploads" # The src attribute for uploaded media will begin with /images/uploads
+
+collections:
+  - name: "blog"
+    label: "Blog Posts"
+    folder: "content/blog"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Tags", name: "tags", widget: "string"}
+      - {label: "Category", name: "category", widget: "string"}
+      - {label: "Excerpt", name: "excerpt", widget: "text"}
+      - {label: "Image", name: "image", widget: "image"}
+      - {label: "Image Caption", name: "image_caption", widget: "string"}
+      - {label: "Author", name: "author", widget: "string"}
+      - {label: "Created", name: "date", widget: "date"}
+      - {label: "Content", name: "body", widget: "markdown"}
+  - name: "gallery"
+    label: "Gallery Entries"
+    folder: "content/gallery"
+    create: true
+    slug: "{{galleryslug}}"
+    fields:
+      - {label: "Gallery Image", name: "image", widget: "image"}
+      - {label: "Gallery Image Alt Description", name: "image_alt", widget: "string"}
+  - label: "Pages"
+    name: "pages"
+    files:
+      - label: "Home Page"
+        name: "index"
+        file: "site/content/index.yml"
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Content, name: content, widget: markdown}
+      - label: "About Page"
+        name: "about"
+        file: "site/content/about.yml"
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Content, name: content, widget: markdown}
+      - label: "Policy Page"
+        name: "policies"
+        file: "site/content/policies.yml"
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Content, name: content, widget: markdown}
+      - label: "Terms Of Use Page"
+        name: "terms of use"
+        file: "site/content/terms-of-use.yml"
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Content, name: content, widget: markdown}

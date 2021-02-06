@@ -1,8 +1,8 @@
 {
     "background_color": "#ffffff",
     "icon_path": "./src/assets/img/favicon.png",
-    "name": "Medium-Three",
-    "short_name": "Medium-Three",
+    "name": "Netlify One",
+    "short_name": "Netlify One",
     "theme_color": "#ffffff",
     "lang": "en",
     "display": "minimal-ui",
