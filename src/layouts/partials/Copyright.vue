@@ -8,6 +8,9 @@
         </li>
         <li>
           <g-link to="/policies/">Policies</g-link>
+        <li>
+          <g-link to="/terms-of-use/">Terms Of Use</g-link>
+        </li>
         </li>
       </ul>
     </div>

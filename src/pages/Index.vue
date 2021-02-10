@@ -1,38 +1,42 @@
 <template>
   <Layout>
-    <article>
-      <h2 data-aos='fade-in' data-aos-delay='100' data-aos-offset='50' data-aos-easing='ease-in-sine' data-aos-duration='2500'>Welcome to {{ $static.metadata.company }}</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur excepturi labore tempore expedita, et iste
-        tenetur suscipit explicabo! Dolores, aperiam non officia eos quod asperiores.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum corporis explicabo consectetur quis. Sint tempore molestiae nisi in, consequuntur sunt. Officia saepe rem ex dolor natus est in ut adipisci!</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <a href='https://google.co.uk' aria-label='Google' target='_blank' rel='noopener noreferrer'>Google</a> excepturi labore tempore expedita, et iste
-        tenetur suscipit explicabo! Dolores, aperiam non officia eos quod asperiores</p>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi quos similique dolorum corporis. Numquam aperiam nemo, iure, rem libero fugit corporis a iste qui voluptate voluptatum dolore. Voluptatem, aut consectetur.</p>
-    </article>
-    <FullBleed />
-    <article>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur excepturi labore tempore expedita, et iste
-        tenetur suscipit explicabo! Dolores, aperiam non officia eos quod asperiores.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum corporis explicabo consectetur quis. Sint tempore molestiae nisi in, consequuntur sunt. Officia saepe rem ex dolor natus est in ut adipisci!</p>
-      <blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <a href='https://google.co.uk' aria-label='Google' target='_blank' rel='noopener noreferrer'>Google</a> excepturi labore tempore expedita, et iste
-        tenetur suscipit explicabo! Dolores, aperiam non officia eos quod asperiores</blockquote>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi quos similique dolorum corporis. Numquam aperiam nemo, iure, rem libero fugit corporis a iste qui voluptate voluptatum dolore. Voluptatem, aut consectetur.</p>
-    </article>
+    <section v-for="{ node } in $page.allIndexPage.edges" :key="node.id">
+      <article>
+        <h2
+          data-aos="fade-in"
+          data-aos-delay="100"
+          data-aos-offset="50"
+          data-aos-easing="ease-in-sine"
+          data-aos-duration="2500"
+        >
+          {{ node.heading }}
+        </h2>
+        <div v-html="node.first_section" />
+      </article>
+      <FullBleed />
+      <article>
+        <div v-html="node.second_section" />
+      </article>
+    </section>
   </Layout>
 </template>
 
-<static-query>
+<page-query>
 query {
-  metadata {
-    siteUrl
-    siteName
-    company
+  allIndexPage {
+    edges {
+      node {
+        heading
+        first_section
+        second_section
+      }
+    }
   }
 }
-</static-query>
+</page-query>
 
 <script>
-import FullBleed from '~/components/base/FullBleed.vue';
+import FullBleed from '~/components/FullBleed.vue';
 export default {
 
   components: {

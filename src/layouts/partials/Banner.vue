@@ -14,8 +14,8 @@ query {
 </static-query>
 
 <script>
-import BasicMobileLink from '~/components/base/BasicMobileLink.vue';
-import BasicPhoneLink from '~/components/base/BasicPhoneLink.vue';
+import BasicMobileLink from '~/components/BasicMobileLink.vue';
+import BasicPhoneLink from '~/components/BasicPhoneLink.vue';
 export default {
   name: 'Banner',
 

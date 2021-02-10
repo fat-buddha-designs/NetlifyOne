@@ -118,9 +118,30 @@ module.exports = {
     {
       use: '@gridsome/source-filesystem',
       options: {
-        typeName: 'Pages',
-        path: './content/pages/*.md'
-      }
+        typeName: 'IndexPage',
+        path: './content/frontpage/index.md',
+      },
+    },
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
+        typeName: 'AboutPage',
+        path: './content/sitepages/about.md',
+      },
+    },
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
+        typeName: 'PoliciesPage',
+        path: './content/sitepages/policies.md',
+      },
+    },
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
+        typeName: 'TermsPage',
+        path: './content/sitepages/terms.md',
+      },
     },
     {
       use: '@gridsome/source-filesystem',

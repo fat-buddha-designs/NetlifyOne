@@ -1,17 +1,29 @@
 <template>
   <Layout>
-    <section>
-      <h2 data-aos="fade-in" data-aos-delay="100" data-aos-offset="50" data-aos-easing="ease-in-sine" data-aos-duration="2500">About us</h2>
-      <p><g-image class="image--left" src="~/assets/img/Will_Moody_of_Fat_Buddha_Designs.jpg" width="200" alt="image" />Lorem ipsum dolor
-        sit amet, consectetur adipisicing elit. Error doloremque omnis animi, eligendi magni a voluptatum, vitae,
-        consequuntur rerum illum odit fugit assumenda rem dolores inventore iste reprehenderit maxime! Iusto.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, ducimus consectetur! Temporibus magnam commodi omnis harum accusantium, ea, suscipit dolor eos eaque facilis asperiores repellat quos. Beatae error tempora officiis.</p>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum quo sapiente libero voluptates beatae odio consectetur voluptatem quae recusandae, quod aliquid blanditiis illo maxime aut in neque exercitationem placeat tempora!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum at voluptatem consectetur minima atque nisi blanditiis quae, sint magni laboriosam inventore quisquam iure optio qui doloremque voluptatum laudantium recusandae aspernatur!</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam ipsum laboriosam dignissimos earum possimus, quidem provident. Nisi delectus ex saepe quaerat voluptatem eius quisquam aliquid quasi, quidem accusantium deleniti vitae.</p>
+    <section v-for="{ node } in $page.allAboutPage.edges" :key="node.id">
+      <h2 data-aos="fade-in"
+          data-aos-delay="100"
+          data-aos-offset="50"
+          data-aos-easing="ease-in-sine"
+          data-aos-duration="2500">
+          {{ node.title }}</h2>
+      <div v-html="node.content" />
     </section>
   </Layout>
 </template>
+
+<page-query>
+query {
+  allAboutPage {
+    edges {
+      node {
+        title
+        content
+      }
+    }
+  }
+}
+</page-query>
 
 <script>
 export default {

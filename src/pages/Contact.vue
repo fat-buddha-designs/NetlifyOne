@@ -129,9 +129,9 @@ query {
 </static-query>
 
 <script>
-import MobileLink from '~/components/base/MobileLink.vue';
-import PhoneLink from '~/components/base/PhoneLink.vue';
-import EmailLink from '~/components/base/EmailLink.vue';
+import MobileLink from '~/components/MobileLink.vue';
+import PhoneLink from '~/components/PhoneLink.vue';
+import EmailLink from '~/components/EmailLink.vue';
 import Address from '~/components/Address.vue';
 export default {
     components: {
