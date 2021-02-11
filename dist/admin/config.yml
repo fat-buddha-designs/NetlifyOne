@@ -35,25 +35,26 @@ collections:
     files:
       - label: "Home Page"
         name: "index"
-        file: "site/content/index.yml"
+        file: "content/frontpage/index.md"
         fields:
-          - {label: Title, name: title, widget: string}
-          - {label: Content, name: content, widget: markdown}
+          - {label: Heading, name: heading, widget: string}
+          - {label: First Block, name: first_section, widget: markdown}
+          - {label: Second Block, name: second_section, widget: markdown}
       - label: "About Page"
         name: "about"
-        file: "site/content/about.yml"
+        file: "content/sitepages/about.md"
         fields:
           - {label: Title, name: title, widget: string}
           - {label: Content, name: content, widget: markdown}
       - label: "Policy Page"
         name: "policies"
-        file: "site/content/policies.yml"
+        file: "content/sitepages/policies.md"
         fields:
           - {label: Title, name: title, widget: string}
           - {label: Content, name: content, widget: markdown}
       - label: "Terms Of Use Page"
         name: "terms of use"
-        file: "site/content/terms-of-use.yml"
+        file: "content/sitepages/terms.md"
         fields:
           - {label: Title, name: title, widget: string}
           - {label: Content, name: content, widget: markdown}
