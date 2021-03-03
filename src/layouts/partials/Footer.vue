@@ -1,16 +1,18 @@
 <template>
-    <footer><!-- footer -->
+  <footer>
+    <!-- footer -->
     <div class="footer--container">
       <div>
         <h6>Page Links</h6>
-      <FooterNav />
+        <FooterNav />
       </div>
-      </div>
-    </footer><!-- /footer -->
+    </div>
+  </footer>
+  <!-- /footer -->
 </template>
 
 <script>
-import FooterNav from '~/components/FooterNav.vue';
+import FooterNav from '~/components/FooterNav.vue'
 export default {
   name: 'Footer',
   components: {
@@ -19,14 +21,12 @@ export default {
 }
 </script>
 
-
 <style lang="scss">
 @import '~/assets/scss/base/_breakpoints.scss';
 
 footer {
   padding: 1em;
   background-color: var(--color-g-12);
-
 
   .footer--container {
     display: -ms-flexbox;
@@ -59,10 +59,13 @@ footer {
           padding: 0.4em 0 0;
           font-size: inherit;
           text-decoration: none;
-          background-image: linear-gradient(transparent calc(100% - 2px), currentColor 2px);
+          background-image: linear-gradient(
+            transparent calc(100% - 2px),
+            currentColor 2px
+          );
           background-repeat: no-repeat;
           background-size: 0% 100%;
-          transition: background-size .35s;
+          transition: background-size 0.35s;
 
           &:hover,
           &:focus {

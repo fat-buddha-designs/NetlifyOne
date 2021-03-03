@@ -1,5 +1,10 @@
 <template>
-    <a href="#page_top" class="scrollup" aria-label="scroll to the top of this page"><font-awesome class="icon" :icon="['fas', 'angle-up']" /></a>
+  <a
+    href="#page_top"
+    class="scrollup"
+    aria-label="scroll to the top of this page"
+    ><font-awesome class="icon" :icon="['fas', 'angle-up']"
+  /></a>
 </template>
 
 <script>
@@ -39,7 +44,6 @@ a.scrollup {
     color: var(--color-wh);
   }
 }
-
 
 @include respond-to(sm) {
   a.scrollup {

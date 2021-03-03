@@ -1,10 +1,26 @@
 <template>
-  <header><!-- /header -->
-   <h1 data-aos="fade-left" data-aos-delay="100" data-aos-offset="50" data-aos-easing="ease-in-sine"
-      data-aos-duration="1500">{{ $static.metadata.company }}</h1>
-    <p data-aos="fade-up" data-aos-delay="200" data-aos-offset="50" data-aos-easing="ease-in-sine"
-      data-aos-duration="1500">{{ $static.metadata.slogan }}</p>
-  </header><!-- /header -->
+  <header>
+    <!-- /header -->
+    <h1
+      data-aos="fade-left"
+      data-aos-delay="100"
+      data-aos-offset="50"
+      data-aos-easing="ease-in-sine"
+      data-aos-duration="1500"
+    >
+      {{ $static.metadata.company }}
+    </h1>
+    <p
+      data-aos="fade-up"
+      data-aos-delay="200"
+      data-aos-offset="50"
+      data-aos-easing="ease-in-sine"
+      data-aos-duration="1500"
+    >
+      {{ $static.metadata.slogan }}
+    </p>
+  </header>
+  <!-- /header -->
 </template>
 
 <static-query>
@@ -24,7 +40,6 @@ query {
 export default {
   name: 'Header',
 }
-
 </script>
 
 <style lang="scss">
@@ -35,12 +50,13 @@ header {
   align-content: center;
   width: 100%;
   overflow: hidden;
-  background: linear-gradient(black, black), url('~@/assets/img/header-background.jpg');
+  background: linear-gradient(black, black),
+    url('~@/assets/img/header-background.jpg');
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   background-blend-mode: saturation;
-  
+
   h1,
   p {
     text-align: center;
@@ -64,12 +80,9 @@ header {
   }
 }
 
-
-
 @media only screen and (min-width: 49.9rem) {
   header {
     padding: 2.8em;
-
 
     h1,
     p {
@@ -78,7 +91,6 @@ header {
     }
   }
 }
-
 
 @media only screen and (min-width: 64rem) {
   header {

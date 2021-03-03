@@ -1,24 +1,59 @@
 <template>
-      <ul class="social--links">
-        <li>
-          <g-link class="social--link" target="_blank" href="https://www.facebook.com"><font-awesome class="social--icon facebook" :icon="['fab', 'facebook']" /></g-link>
-        </li>
-        <li>
-          <g-link class="social--link" target="_blank" href="https://www.pinterest.com"><font-awesome class="social--icon pinterest" :icon="['fab', 'pinterest']" /></g-link>
-        </li>
-        <li>
-          <g-link class="social--link" target="_blank" href="https://www.instagram.com"><font-awesome class="social--icon instagram" :icon="['fab', 'instagram']" /></g-link>
-        </li>
-        <li>
-          <g-link class="social--link" target="_blank" href="https://www.twitter.com"><font-awesome class="social--icon twitter" :icon="['fab', 'twitter']" /></g-link>
-        </li>
-        <li>
-          <g-link class="social--link" target="_blank" href="https://www.whatsapp.com"><font-awesome class="social--icon whatsapp" :icon="['fab', 'whatsapp']" /></g-link>
-        </li>
-        <li>
-          <g-link class="social--link" target="_blank" href="https://www.flickr.com"><font-awesome class="social--icon flickr" :icon="['fab', 'flickr']" /></g-link>
-        </li>
-      </ul>
+  <ul class="social--links">
+    <li>
+      <g-link
+        class="social--link"
+        target="_blank"
+        href="https://www.facebook.com"
+        ><font-awesome
+          class="social--icon facebook"
+          :icon="['fab', 'facebook']"
+      /></g-link>
+    </li>
+    <li>
+      <g-link
+        class="social--link"
+        target="_blank"
+        href="https://www.pinterest.com"
+        ><font-awesome
+          class="social--icon pinterest"
+          :icon="['fab', 'pinterest']"
+      /></g-link>
+    </li>
+    <li>
+      <g-link
+        class="social--link"
+        target="_blank"
+        href="https://www.instagram.com"
+        ><font-awesome
+          class="social--icon instagram"
+          :icon="['fab', 'instagram']"
+      /></g-link>
+    </li>
+    <li>
+      <g-link
+        class="social--link"
+        target="_blank"
+        href="https://www.twitter.com"
+        ><font-awesome class="social--icon twitter" :icon="['fab', 'twitter']"
+      /></g-link>
+    </li>
+    <li>
+      <g-link
+        class="social--link"
+        target="_blank"
+        href="https://www.whatsapp.com"
+        ><font-awesome
+          class="social--icon whatsapp"
+          :icon="['fab', 'whatsapp']"
+      /></g-link>
+    </li>
+    <li>
+      <g-link class="social--link" target="_blank" href="https://www.flickr.com"
+        ><font-awesome class="social--icon flickr" :icon="['fab', 'flickr']"
+      /></g-link>
+    </li>
+  </ul>
 </template>
 
 <script>
@@ -38,7 +73,6 @@ export default {
   max-width: 280px;
 
   li {
-
     .social--link {
       background-size: 0% 100%;
 
@@ -57,7 +91,6 @@ export default {
       transform: scale(1);
 
       &.instagram {
-
         &:hover,
         &:focus {
           transform: scale(1.1);
@@ -66,7 +99,6 @@ export default {
       }
 
       &.facebook {
-
         &:hover,
         &:focus {
           transform: scale(1.1);
@@ -75,7 +107,6 @@ export default {
       }
 
       &.pinterest {
-
         &:hover,
         &:focus {
           transform: scale(1.1);
@@ -84,7 +115,6 @@ export default {
       }
 
       &.twitter {
-
         &:hover,
         &:focus {
           transform: scale(1.1);
@@ -92,32 +122,28 @@ export default {
         }
       }
 
-        &.whatsapp {
-
-          &:hover,
-          &:focus {
-            transform: scale(1.1);
-            color: #4dc247;
-          }
+      &.whatsapp {
+        &:hover,
+        &:focus {
+          transform: scale(1.1);
+          color: #4dc247;
         }
+      }
 
-        &.flickr {
-
-          &:hover,
-          &:focus {
-            transform: scale(1.1);
-            color: #ff0084;
-          }
+      &.flickr {
+        &:hover,
+        &:focus {
+          transform: scale(1.1);
+          color: #ff0084;
         }
       }
     }
   }
+}
 
 @include respond-to(sm) {
   .social--links {
-
     li {
-
       .social--icon {
         margin: 1.25em;
         width: 2.2rem;
@@ -129,9 +155,7 @@ export default {
 
 @include respond-to(md) {
   .social--links {
-
     li {
-
       .social--icon {
         margin: 1.5em;
         width: 2.4rem;
@@ -143,9 +167,7 @@ export default {
 
 @include respond-to(lg) {
   .social--links {
-
     li {
-
       .social--icon {
         margin: 1.75em;
         width: 2.6rem;

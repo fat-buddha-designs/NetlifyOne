@@ -7,6 +7,7 @@ created: 2019-10-31
 image: ./images/sergio-souza-WU6K3Lmq9ok-unsplash.jpg
 image_caption: Photo by Sergio Souza
 author: author3
+published: true
 ---
 
 ### We do loads of business type stuff!

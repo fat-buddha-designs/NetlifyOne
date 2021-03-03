@@ -7,6 +7,7 @@ created: 2019-02-05
 image: ./images/lukasz-szmigiel-jFCViYFYcus-unsplash.jpg
 image_caption: Photo by Luasz Szmigiel
 author: author3
+published: true
 ---
 
 ### We are so quick to respond to your every need!

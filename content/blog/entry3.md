@@ -7,6 +7,7 @@ created: 2019-03-20
 image: ./images/marco-marques-dJ_Zl5LpPto-unsplash.jpg
 image_caption: Photo by Marco Marques
 author: author1
+published: true
 ---
 
 ### Markdown, the way to write blog posts.

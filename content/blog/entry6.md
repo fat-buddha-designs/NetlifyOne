@@ -7,6 +7,7 @@ created: 2019-06-28
 image: ./images/qingbao-meng-01_igFr7hd4-unsplash.jpg
 image_caption: Photo by Qingbao Meng
 author: author2
+published: true
 ---
 
 ### Gridsome is a super fast framework that builds static HTML pages!

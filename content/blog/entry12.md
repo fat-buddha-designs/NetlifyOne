@@ -7,6 +7,7 @@ created: 2019-12-24
 image: ./images/steven-wong-LcemoNqHIxY-unsplash.jpg
 image_caption: Photo by Steven Wong
 author: author3
+published: true
 ---
 
 ### Designed by Fat Buddha Designs in Norfolk England.

@@ -1,5 +1,5 @@
 <template>
-<vue-cookie-accept-decline
+  <vue-cookie-accept-decline
     :ref="'CookieBar'"
     :elementId="'CookieBar'"
     :debug="false"
@@ -10,67 +10,64 @@
     :showPostponeButton="false"
     @status="cookieStatus"
     @clicked-accept="cookieClickedAccept"
-    @clicked-decline="cookieClickedDecline">
-
+    @clicked-decline="cookieClickedDecline"
+  >
     <!-- Optional -->
-    <div slot="postponeContent">
-        &times;
-    </div>
+    <div slot="postponeContent">&times;</div>
 
     <!-- Optional -->
     <div slot="message">
-        <p>We use cookies to ensure you get the best experience on our website. <a href="https://cookiesandyou.com/" target="_blank">Learn More...</a></p>
+      <p>
+        We use cookies to ensure you get the best experience on our website.
+        <a href="https://cookiesandyou.com/" target="_blank">Learn More...</a>
+      </p>
     </div>
 
     <!-- Optional -->
-    <div slot="declineContent">
-       OPT OUT
-    </div>
- 
+    <div slot="declineContent">OPT OUT</div>
+
     <!-- Optional -->
-    <div slot="acceptContent">
-        GOT IT!
-    </div>
-</vue-cookie-accept-decline>
+    <div slot="acceptContent">GOT IT!</div>
+  </vue-cookie-accept-decline>
 </template>
 
 <script>
 export default {
   name: 'CookieConsent',
-   data () {
+  data() {
     return {
-        status: null
+      status: null,
     }
   },
   methods: {
-    cookieStatus (status) {
+    cookieStatus(status) {
       console.log('status: ' + status)
       this.status = status
     },
-    cookieClickedAccept () {
+    cookieClickedAccept() {
       console.log('here in accept')
       this.status = 'accept'
     },
-    cookieClickedDecline () {
+    cookieClickedDecline() {
       console.log('here in decline')
       this.status = 'decline'
     },
-    cookieRemovedCookie () {
+    cookieRemovedCookie() {
       console.log('here in cookieRemoved')
       this.status = null
       this.$refs.myPanel1.init()
     },
 
-    removeCookie () {
+    removeCookie() {
       console.log('Cookie removed')
       this.$refs.myPanel1.removeCookie()
-    }
+    },
   },
   computed: {
-      statusText () {
-        return this.status || 'No cookie set'
-      }
-  }
+    statusText() {
+      return this.status || 'No cookie set'
+    },
+  },
 }
 </script>
 
@@ -106,13 +103,13 @@ div#CookieBar {
 
   a {
     color: var(--color-sec);
-      font-size:inherit;
+    font-size: inherit;
 
-  &:focus,
-  &:hover {
-    color: var(--color-blk);
-    text-decoration: none;
-  }
+    &:focus,
+    &:hover {
+      color: var(--color-blk);
+      text-decoration: none;
+    }
   }
 }
 
@@ -137,28 +134,28 @@ div#CookieBar {
 }
 
 .cookie__bar__buttons__button--accept {
-        background: var(--color-green);
-        background: linear-gradient(var(--color-green), var(--color-green));
-        color: var(--color-wh);
-        border: none;
-        border-radius: var(--bor-rad);
-        transition: var(--trans);
+  background: var(--color-green);
+  background: linear-gradient(var(--color-green), var(--color-green));
+  color: var(--color-wh);
+  border: none;
+  border-radius: var(--bor-rad);
+  transition: var(--trans);
 }
 .cookie__bar__buttons__button--accept:hover {
-          background: var(--color-green-drk);
-          border: none;
+  background: var(--color-green-drk);
+  border: none;
 }
 .cookie__bar__buttons__button--decline {
-        background: var(--color-red);
-        background: linear-gradient(var(--color-red), var(--color-red));
-        color: var(--color-wh);
-        border: none;
-        border-radius: var(--bor-rad);
-        transition: var(--trans);
+  background: var(--color-red);
+  background: linear-gradient(var(--color-red), var(--color-red));
+  color: var(--color-wh);
+  border: none;
+  border-radius: var(--bor-rad);
+  transition: var(--trans);
 }
 .cookie__bar__buttons__button--decline:hover {
-          background: var(--color-red-drk);
-          border: none;
+  background: var(--color-red-drk);
+  border: none;
 }
 
 .cookie__bar__buttons__button--accept div,
@@ -167,5 +164,4 @@ div#CookieBar {
   align-content: center;
   justify-content: center;
 }
-
 </style>

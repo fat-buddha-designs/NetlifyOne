@@ -6,9 +6,11 @@
     <Nav />
     <Banner />
 
-    <main id="main" role="main" tabindex="-1"><!-- /main -->
-        <slot />
-    </main><!-- /main -->
+    <main id="main" role="main" tabindex="-1">
+      <!-- /main -->
+      <slot />
+    </main>
+    <!-- /main -->
 
     <SocialBanner />
     <Footer />
@@ -18,19 +20,18 @@
   </div>
 </template>
 
-
 <script>
 import AOS from 'aos'
 import 'aos/dist/aos.css'
-import Accessibiliity from '~/layouts/partials/Accessibility.vue';
-import Nav from '~/layouts/partials/Nav.vue';
-import Header from '~/layouts/partials/Header.vue';
-import Banner from '~/layouts/partials/Banner.vue';
-import SocialBanner from '~/layouts/partials/SocialBanner.vue';
-import Footer from '~/layouts/partials/Footer.vue';
-import Copyright from '~/layouts/partials/Copyright.vue';
-import CookieConsent from '~/layouts/partials/CookieConsent.vue';
-import Scrollup from '~/layouts/partials/Scrollup.vue';
+import Accessibiliity from '~/layouts/partials/Accessibility.vue'
+import Nav from '~/layouts/partials/Nav.vue'
+import Header from '~/layouts/partials/Header.vue'
+import Banner from '~/layouts/partials/Banner.vue'
+import SocialBanner from '~/layouts/partials/SocialBanner.vue'
+import Footer from '~/layouts/partials/Footer.vue'
+import Copyright from '~/layouts/partials/Copyright.vue'
+import CookieConsent from '~/layouts/partials/CookieConsent.vue'
+import Scrollup from '~/layouts/partials/Scrollup.vue'
 export default {
   components: {
     Accessibiliity,
@@ -44,10 +45,9 @@ export default {
     Scrollup,
   },
 
-    mounted() {
-      AOS.init()
+  mounted() {
+    AOS.init()
   },
-
 }
 </script>
 
@@ -134,7 +134,7 @@ body {
   -webkit-overflow-scrolling: touch;
   scroll-behavior: smooth;
   touch-action: auto;
-  background-color: var(--bkg-color-drkt)!important;
+  background-color: var(--bkg-color-drkt) !important;
 }
 
 @include respond-to(md) {

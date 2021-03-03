@@ -22,6 +22,7 @@ collections:
       - {label: "Author", name: "author", widget: "string"}
       - {label: "Created", name: "date", widget: "date"}
       - {label: "Content", name: "body", widget: "markdown"}
+      - {label: "Published", name: "published", widget: "boolean", default: false}
   - name: "gallery"
     label: "Gallery Entries"
     folder: "content/gallery"

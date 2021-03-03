@@ -6,13 +6,15 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 module.exports = function (api) {
-  api.onCreateNode(options => {
+  api.onCreateNode((options) => {
     if (options.internal.typeName === 'Blog') {
-
-      options.tags = (typeof options.tags === 'string') ? options.tags.split(',').map(string => string.trim()) : options.tags;
+      options.tags =
+        typeof options.tags === 'string'
+          ? options.tags.split(',').map((string) => string.trim())
+          : options.tags
       return {
-        ...options
-      };
+        ...options,
+      }
     }
   })
 
@@ -24,8 +26,8 @@ module.exports = function (api) {
     // Use the Pages API here: https://gridsome.org/docs/pages-api/
   })
 
-  api.loadSource(async store => {
-      store.addMetadata('company', 'Netlify One'),
+  api.loadSource(async (store) => {
+    store.addMetadata('company', 'Netlify One'),
       store.addMetadata('slogan', 'Netlify CMS Based Boilerplate'),
       store.addMetadata('author', 'Will Smith'),
       store.addMetadata('mobile', 'tel:07841300999'),
@@ -37,6 +39,5 @@ module.exports = function (api) {
       store.addMetadata('city', 'Norwich'),
       store.addMetadata('county', 'Norfolk'),
       store.addMetadata('postcode', 'NR13 5EJ')
-    }
-  )
+  })
 }

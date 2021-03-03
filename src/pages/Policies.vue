@@ -20,23 +20,26 @@ query {
 }
 </page-query>
 
-
 <script>
 export default {
   metaInfo() {
     return {
       title: 'Welcome to Our Policies',
-      link: [{
-        rel: 'canonical',
-        href: 'https://medium.co.uk/policies'
-      }],
-      meta: [{
+      link: [
+        {
+          rel: 'canonical',
+          href: 'https://netlify-one.co.uk/policies',
+          hreflang: 'en-GB',
+        },
+      ],
+      meta: [
+        {
           name: 'description',
-          content: 'Our policies are important to us'
+          content: 'Our policies are important to us',
         },
         {
           name: 'keywords',
-          content: 'Policies, Accessibility, Cookies, Privacy, Awesome, Medium'
+          content: 'Policies, Accessibility, Cookies, Privacy, Awesome, Netlify-One',
         },
         {
           property: 'og:locale',
@@ -48,11 +51,11 @@ export default {
         },
         {
           property: 'og:site_name',
-          content: 'Medium',
+          content: 'Netlify-One',
         },
         {
           property: 'og:url',
-          content: 'https://medium.co.uk/',
+          content: 'https://netlify-one.co.uk/policies',
         },
         {
           property: 'og:title',
@@ -60,11 +63,11 @@ export default {
         },
         {
           property: 'og:description',
-          content: 'Our policies are important to us'
+          content: 'Our policies are important to us',
         },
         {
           property: 'og:image',
-          content: 'https://medium.co.uk/assets/img/blue-leaves.jpg',
+          content: 'https://netlify-one.co.uk/assets/img/blue-leaves.jpg',
         },
         {
           name: 'twitter:card',
@@ -84,63 +87,68 @@ export default {
         },
         {
           name: 'twitter:description',
-          content: 'Our policies are important to us'
+          content: 'Our policies are important to us',
         },
         {
           name: 'twitter:image',
-          content: 'https://medium.co.uk/assets/img/blue-leaves.jpg',
+          content: 'https://netlify-one.co.uk/assets/img/blue-leaves.jpg',
         },
       ],
-      script: [{
-        type: 'application/ld+json',
-        json: {
-          '@context': 'http://www.schema.org',
-          '@type': 'Boilerplate',
-          'name': 'Medium',
-          'url': 'https://www.medium.co.uk/policies',
-          'logo': 'https://www.medium.co.uk/assets/img/favicon.png',
-          'image': 'https://medium.co.uk/assets/img/blue-leaves.jpg',
-          'description': 'Our privacy policy is important to us',
-          'address': {
-            '@type': 'PostalAddress',
-            'streetAddress': '9 Blofield Corner Road, Blofield Heath',
-            'addressLocality': 'Norwich',
-            'addressRegion': 'Norfolk',
-            'postalCode': 'NR13 4SA',
-            'addressCountry': 'United Kingdom'
-          },
-          'geo': {
-            '@type': 'GeoCoordinates',
-            'latitude': '53.2222',
-            'longitude': '1.236587'
-          },
-          'telephone': '+44603717057',
-          'email': 'mailto:info@medium.uk',
-          "openingHoursSpecification": [{
-              "@type": "OpeningHoursSpecification",
-              "dayOfWeek": [
-                "Monday",
-                "Tuesday",
-                "Wednesday",
-                "Thursday",
-                "Friday"
-              ],
-              "opens": "07:00",
-              "closes": "18:00"
+      script: [
+        {
+          type: 'application/ld+json',
+          json: {
+            '@context': 'http://www.schema.org',
+            '@type': 'Boilerplate',
+            name: 'Netlify-One',
+            url: 'https://www.netlify-one.co.uk/policies',
+            logo: 'https://www.netlify-one.co.uk/assets/img/favicon.png',
+            image: 'https://netlify-one.co.uk/assets/img/blue-leaves.jpg',
+            description: 'Our privacy policy is important to us',
+            address: {
+              '@type': 'PostalAddress',
+              streetAddress: '9 Blofield Corner Road, Blofield Heath',
+              addressLocality: 'Norwich',
+              addressRegion: 'Norfolk',
+              postalCode: 'NR13 4SA',
+              addressCountry: 'United Kingdom',
             },
-            {
-              "@type": "OpeningHoursSpecification",
-              "dayOfWeek": "Saturday",
-              "opens": "07:00",
-              "closes": "12:00"
-            }
-          ],
-          'sameAs': ['https://www.facebook.com/medium', 'https://www.twitter.com/medium'],
-          'priceRange': '£250-£700'
-        }
-      }]
+            geo: {
+              '@type': 'GeoCoordinates',
+              latitude: '53.2222',
+              longitude: '1.236587',
+            },
+            telephone: '+44603717057',
+            email: 'mailto:info@netlify-one.co.uk',
+            openingHoursSpecification: [
+              {
+                '@type': 'OpeningHoursSpecification',
+                dayOfWeek: [
+                  'Monday',
+                  'Tuesday',
+                  'Wednesday',
+                  'Thursday',
+                  'Friday',
+                ],
+                opens: '07:00',
+                closes: '18:00',
+              },
+              {
+                '@type': 'OpeningHoursSpecification',
+                dayOfWeek: 'Saturday',
+                opens: '07:00',
+                closes: '12:00',
+              },
+            ],
+            sameAs: [
+              'https://www.facebook.com/Netlify-One',
+              'https://www.twitter.com/Netlify-One',
+            ],
+            priceRange: '£250-£700',
+          },
+        },
+      ],
     }
-  }
+  },
 }
 </script>
-

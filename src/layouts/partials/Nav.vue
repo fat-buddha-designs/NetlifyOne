@@ -1,31 +1,59 @@
 <template>
-    <div ref="mySidenav" id="mySidenav" :class="[opened ? 'opened' : 'shut']">
-      <div class="menu__holder">
-        <b-navbar>
-      <b-nav>
-        <b-nav-item class="close"><button @click="opened = !opened" class="close"><font-awesome class="nav__icon" :icon="['fas', 'times']" /></button></b-nav-item>
-        <b-nav-item v-for="element in $static.metadata.menu" :key="element.name">
-          <g-link :to="element.link" :aria-label="`${ element.name }`" class="nav__link" active-class="is-active-link" exact-active-class="active">
-            {{ element.name }}</g-link>
-        </b-nav-item>
+  <div ref="mySidenav" id="mySidenav" :class="[opened ? 'opened' : 'shut']">
+    <div class="menu__holder">
+      <b-navbar>
+        <b-nav>
+          <b-nav-item class="close"
+            ><button @click="opened = !opened" class="close">
+              <font-awesome
+                class="nav__icon"
+                :icon="['fas', 'times']"
+              /></button
+          ></b-nav-item>
+          <b-nav-item
+            v-for="element in $static.metadata.menu"
+            :key="element.name"
+          >
+            <g-link
+              :to="element.link"
+              :aria-label="`${element.name}`"
+              class="nav__link"
+              active-class="is-active-link"
+              exact-active-class="active"
+            >
+              {{ element.name }}</g-link
+            >
+          </b-nav-item>
           <b-nav-item-dropdown
             id="my-nav-dropdown"
             text="Services"
             aria-haspopup="true"
             aria-expanded="false"
           >
-          <b-dropdown-item v-for="element in $static.metadata.dropmenu" :key="element.name">
-          <g-link :to="element.link" :aria-label="`${ element.name }`" active-class="is-active-link" exact-active-class="active">
-            {{ element.name }}</g-link>
-        </b-dropdown-item>
-        </b-nav-item-dropdown>
-      </b-nav>
+            <b-dropdown-item
+              v-for="element in $static.metadata.dropmenu"
+              :key="element.name"
+            >
+              <g-link
+                :to="element.link"
+                :aria-label="`${element.name}`"
+                active-class="is-active-link"
+                exact-active-class="active"
+              >
+                {{ element.name }}</g-link
+              >
+            </b-dropdown-item>
+          </b-nav-item-dropdown>
+        </b-nav>
       </b-navbar>
-      </div>
-      <div class="button__holder">
-        <button @click="opened = !opened" class="open"><font-awesome class="nav__icon" :icon="['fas', 'bars']" /></button>
-      </div>
-    </div><!-- /nav -->
+    </div>
+    <div class="button__holder">
+      <button @click="opened = !opened" class="open">
+        <font-awesome class="nav__icon" :icon="['fas', 'bars']" />
+      </button>
+    </div>
+  </div>
+  <!-- /nav -->
 </template>
 
 <static-query>
@@ -109,14 +137,13 @@ export default {
           }
         }
       }
-              .dropdown-item {
-          padding-top: 0.65em;
-          border-bottom: var(--bor-dot);
-        }
+      .dropdown-item {
+        padding-top: 0.65em;
+        border-bottom: var(--bor-dot);
+      }
     }
   }
 }
-
 
 @media only screen and (max-width: 49.87rem) {
   #mySidenav {
@@ -172,18 +199,15 @@ export default {
           border-bottom: var(--bor-dot);
         }
       }
-      ul li:nth-last-child(1)
-       {
-         padding-left: 0.6em;
-       }
+      ul li:nth-last-child(1) {
+        padding-left: 0.6em;
+      }
 
       .dropdown-menu li:nth-last-child(1),
       .dropdown-menu li:nth-last-child(2),
-      .dropdown-menu li:nth-last-child(3)
-       {
-         padding-left: 0;
-       }
-
+      .dropdown-menu li:nth-last-child(3) {
+        padding-left: 0;
+      }
 
       .close {
         -ms-grid-column: 2;
@@ -231,7 +255,6 @@ export default {
   }
 }
 
-
 @media only screen and (min-width: 49.9rem) {
   #mySidenav {
     position: relative;
@@ -249,9 +272,7 @@ export default {
       justify-content: center;
 
       ul {
-
         li {
-
           a {
             padding-right: 0.8em;
             padding-left: 0.8em;
@@ -272,11 +293,8 @@ export default {
     padding: 0.5em;
 
     .menu__holder {
-
       ul {
-
         li {
-
           a {
             padding-right: 1em;
             padding-left: 1em;

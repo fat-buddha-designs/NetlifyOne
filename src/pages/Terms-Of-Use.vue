@@ -28,13 +28,15 @@ export default {
       link: [
         {
           rel: 'canonical',
-          href: 'https://forestry-one.co.uk/terms',
+          href: 'https://netlify-one.co.uk/terms-of-use',
+          hreflang: 'en-GB',
         },
       ],
       meta: [
         {
           name: 'description',
-          content: 'This statement sets out how we expect you to use the content on our website.',
+          content:
+            'This statement sets out how we expect you to use the content on our website.',
         },
         {
           name: 'keywords',
@@ -50,23 +52,24 @@ export default {
         },
         {
           property: 'og:site_name',
-          content: 'Forestry One',
+          content: 'Netlify-One',
         },
         {
           property: 'og:url',
-          content: 'https://forestry-one.co.uk/about',
+          content: 'https://netlify-one.co.uk/terms-of-use',
         },
         {
           property: 'og:title',
-          content: 'Our Terms Of Use Statement | Forestry One',
+          content: 'Our Terms Of Use Statement | Netlify-One',
         },
         {
           property: 'og:description',
-          content: 'This statement sets out how we expect you to use the content on our website.',
+          content:
+            'This statement sets out how we expect you to use the content on our website.',
         },
         {
           property: 'og:image',
-          content: 'https://forestry-one.co.uk/assets/img/blue-leaves.jpg',
+          content: 'https://netlify-one.co.uk/assets/img/blue-leaves.jpg',
         },
         {
           name: 'twitter:card',
@@ -82,15 +85,16 @@ export default {
         },
         {
           name: 'twitter:title',
-          content: 'Our Terms Of Use Statement | Forestry One',
+          content: 'Our Terms Of Use Statement | Netlify-One',
         },
         {
           name: 'twitter:description',
-          content: 'This statement sets out how we expect you to use the content on our website.',
+          content:
+            'This statement sets out how we expect you to use the content on our website.',
         },
         {
           name: 'twitter:image',
-          content: 'https://forestry-one.co.uk/assets/img/blue-leaves.jpg',
+          content: 'https://netlify-one.co.uk/assets/img/blue-leaves.jpg',
         },
       ],
       script: [
@@ -99,11 +103,12 @@ export default {
           json: {
             '@context': 'http://www.schema.org',
             '@type': 'LocalBusiness',
-            name: 'Forestry One',
-            url: 'https://www.forestry-one.co.uk/terms',
-            logo: 'https://www.forestry-one.co.uk/assets/img/favicon.png',
-            image: 'https://www.forestry-one.co.uk/assets/img/blue-leaves.jpg',
-            description: 'This statement sets out how we expect you to use the content on our website.',
+            name: 'Netlify-One',
+            url: 'https://www.netlify-one.co.uk/terms-of-use',
+            logo: 'https://www.netlify-one.co.uk/assets/img/favicon.png',
+            image: 'https://www.netlify-one.co.uk/assets/img/blue-leaves.jpg',
+            description:
+              'This statement sets out how we expect you to use the content on our website.',
             address: {
               '@type': 'PostalAddress',
               streetAddress: '11 Boiler Road, Salhouse',
@@ -118,7 +123,7 @@ export default {
               longitude: '1.236587',
             },
             telephone: '+44603717057',
-            email: 'mailto:info@forestry-one.uk',
+            email: 'mailto:info@netlify-one.co.uk',
             openingHoursSpecification: [
               {
                 '@type': 'OpeningHoursSpecification',

@@ -7,6 +7,7 @@ created: 2019-11-11
 image: ./images/stephan-cassara-KnAIsBuitGg-unsplash.jpg
 image_caption: Photo by Stephan Cassara
 author: author3
+published: true
 ---
 
 ### Gridsome is an awesome framework based on Vue.js

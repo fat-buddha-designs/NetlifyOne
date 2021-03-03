@@ -1,36 +1,42 @@
 <template>
-  	<a href="#main" class="skip">Skip to content</a>
+  <a href="#main" class="skip">Skip to content</a>
 </template>
-
 
 <script>
 export default {
   name: 'Accessibilty',
-    mounted () {
+  mounted() {
     this.init()
   },
   methods: {
-    init () {
-      window.addEventListener('hashchange', () => {
-        this.focusElement(location.hash.substring(1))
-      }, false)
+    init() {
+      window.addEventListener(
+        'hashchange',
+        () => {
+          this.focusElement(location.hash.substring(1))
+        },
+        false
+      )
       if (location.hash && location.hash.substring(1)) {
         this.focusElement(location.hash.substring(1))
       }
     },
-    focusElement (id) {
+    focusElement(id) {
       if (!id) return
       let element = window.document.getElementById(id)
       if (element) {
-        if (!/^(a|select|input|button|textarea)/i.test(element.tagName.toLowerCase())) {
+        if (
+          !/^(a|select|input|button|textarea)/i.test(
+            element.tagName.toLowerCase()
+          )
+        ) {
           element.setAttribute('tabindex', -1)
         }
         element.focus()
       }
-    }
-  }
+    },
+  },
 }
-
 </script>
 
 <style lang="scss">
@@ -56,7 +62,7 @@ a.skip:hover {
   width: auto;
   height: auto;
   border-radius: var(--bor-rad);
-  color:var(--color-pri);
+  color: var(--color-pri);
   background: var(--color-wh);
 }
 </style>

@@ -57,7 +57,10 @@ export default {
   margin: auto;
   padding: 0 1rem;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size, 16rem), 1fr));
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(var(--auto-grid-min-size, 16rem), 1fr)
+  );
   grid-gap: 1rem;
 
   .card {
@@ -93,7 +96,6 @@ export default {
     }
   }
 }
-
 
 @include respond-to(sm) {
   .full--bleed--cont {

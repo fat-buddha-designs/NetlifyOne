@@ -1,14 +1,9 @@
 <template>
-      <ul>
-        <li
-          v-for="element in $static.metadata.menu"
-          :key="element.name"
-        >
-          <g-link
-            :to="element.link"
-              >{{ element.name }}</g-link>
-        </li>
-      </ul>
+  <ul>
+    <li v-for="element in $static.metadata.menu" :key="element.name">
+      <g-link :to="element.link">{{ element.name }}</g-link>
+    </li>
+  </ul>
 </template>
 
 <static-query>

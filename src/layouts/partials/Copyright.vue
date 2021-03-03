@@ -1,20 +1,36 @@
 <template>
-  <section class="copyright"><!-- copyright -->
+  <section class="copyright">
+    <!-- copyright -->
     <div>
       <ul>
-        <li>Copyright <font-awesome class="icon" :icon="['fas', 'copyright']" /> {{ $static.metadata.siteName }}, All Rights Reserved -
-          Website By <g-link target="_blank" href="https://fatbuddhadesigns.co.uk" aria-label="Fat Buddha Designs">Fat
-            Buddha Designs</g-link> - Created with <g-link target="_blank" href="https://gridsome.org/" aria-label="Gridsome">Gridsome</g-link>
+        <li>
+          Copyright <font-awesome class="icon" :icon="['fas', 'copyright']" />
+          {{ $static.metadata.siteName }}, All Rights Reserved - Website By
+          <g-link
+            target="_blank"
+            href="https://fatbuddhadesigns.co.uk"
+            aria-label="Fat Buddha Designs"
+            >Fat Buddha Designs</g-link
+          >
+          - Created with
+          <g-link
+            target="_blank"
+            href="https://gridsome.org/"
+            aria-label="Gridsome"
+            >Gridsome</g-link
+          >
         </li>
         <li>
           <g-link to="/policies/">Policies</g-link>
+        </li>
+
         <li>
           <g-link to="/terms-of-use/">Terms Of Use</g-link>
         </li>
-        </li>
       </ul>
     </div>
-  </section><!-- /copyright -->
+  </section>
+  <!-- /copyright -->
 </template>
 
 <static-query>
@@ -53,10 +69,13 @@ export default {
     padding: 0.4em 0 0;
     font-size: inherit;
     text-decoration: none;
-    background-image: linear-gradient(transparent calc(100% - 1px), currentColor 1px);
+    background-image: linear-gradient(
+      transparent calc(100% - 1px),
+      currentColor 1px
+    );
     background-repeat: no-repeat;
     background-size: 0% 100%;
-    transition: background-size .35s;
+    transition: background-size 0.35s;
 
     &:hover {
       background-size: 100% 100%;
