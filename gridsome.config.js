@@ -166,9 +166,9 @@ module.exports = {
     },
     {
       use: 'gridsome-plugin-netlify-cms-paths',
-      options: {
-        contentTypes: ['Blog'],
-      },
+      // options: {
+      //   contentTypes: ['Blog'],
+      // },
     },
   ],
   templates: {

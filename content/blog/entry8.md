@@ -4,7 +4,7 @@ tags: Innovative, Modern, Futureproof
 category: Design
 excerpt: Designed by the good guys at Fat Buddha Designs.
 created: 2019-08-02
-image: ./images/sadanand-lowanshi-6AnDyJ10_iQ-unsplash.jpg
+image: uploads/sadanand-lowanshi-6AnDyJ10_iQ-unsplash.jpg
 image_caption: Photo by Sadanand Lowanshi
 author: Will Moody
 published: true

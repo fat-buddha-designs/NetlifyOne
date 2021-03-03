@@ -5,7 +5,7 @@ image_caption: Photo by Me
 created: 2019-10-31
 tags: Forest, Trees, Hugs
 category: Nature
-image: ./images/lukasz-szmigiel-jfcviyfycus-unsplash.jpg
+image: uploads/lukasz-szmigiel-jfcviyfycus-unsplash.jpg
 author: John Doe
 published: true
 ---

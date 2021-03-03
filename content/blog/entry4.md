@@ -4,7 +4,7 @@ tags: Blog, Posts, Markdown
 category: Markdown
 excerpt: We can help you write blog posts in super easy Markdown.
 created: 2019-04-01
-image: ./images/menghan-zhang-gnoY8Z0umg4-unsplash.jpg
+image: uploads/menghan-zhang-gnoY8Z0umg4-unsplash.jpg
 image_caption: Photo by Menghan Zhang
 author: Kiki Dee
 published: true

@@ -3,8 +3,8 @@ backend:
   branch: main
   repo: fat-buddha-designs/NetlifyOne
 
-media_folder: "static/images/uploads" # Media files will be stored in the repo under static/images/uploads
-public_folder: "/images/uploads" # The src attribute for uploaded media will begin with /images/uploads
+media_folder: 'static/uploads'
+public_folder: 'uploads'
 
 collections:
   - name: "blog"
@@ -22,7 +22,7 @@ collections:
       - {label: "Author", name: "author", widget: "string", required: true}
       - {label: "Created", name: "date", widget: "date", required: true}
       - {label: "Content", name: "body", widget: "markdown"}
-      - {label: "Published, switch to publish this post", name: "published", widget: "boolean", default: false}
+      - {label: "Published, switch to publish this post", name: "published", widget: "boolean", default: false} 
   - name: "gallery"
     label: "Gallery Entries"
     folder: "content/gallery"

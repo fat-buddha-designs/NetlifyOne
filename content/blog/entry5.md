@@ -4,7 +4,7 @@ tags: Innovative, Modern, Futureproof
 category: Design
 excerpt: Designed by real people, not robots.
 created: 2019-05-05
-image: ./images/phoenix-han-Nqdh0G8rdCc-unsplash.jpg
+image: uploads/phoenix-han-Nqdh0G8rdCc-unsplash.jpg
 image_caption: Photo by Phoenix Han
 author: Kiki Dee
 published: true

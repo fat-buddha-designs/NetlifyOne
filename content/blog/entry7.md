@@ -4,7 +4,7 @@ tags: Gridsome, Framework, Vue.js
 category: Gridsome
 excerpt: Gridsome is a wonderful framework based on Vue.js.
 created: 2019-07-29
-image: ./images/riccardo-chiarini-2VDa8bnLM8c-unsplash.jpg
+image: uploads/riccardo-chiarini-2VDa8bnLM8c-unsplash.jpg
 image_caption: Photo by Riccardo Chiarini
 author: Sally Smith
 published: true
