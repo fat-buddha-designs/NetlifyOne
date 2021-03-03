@@ -1,12 +1,13 @@
 ---
 title: Post Ten
-tags: Market Leaders, Independent, Global
-category: Business
 excerpt: We do loads of business type stuff!
+image_caption: Photo by Me
 created: 2019-10-31
-image: ./images/sergio-souza-WU6K3Lmq9ok-unsplash.jpg
-image_caption: Photo by Sergio Souza
-author: author3
+tags: Forest, Trees, Hugs
+category: Nature
+image: /images/uploads/lukasz-szmigiel-jfcviyfycus-unsplash.jpg
+author: John Doe
+date: 2021-03-03T13:24:20.797Z
 published: true
 ---
 
