@@ -3,7 +3,7 @@ title: Is Your Mattress Right For You?
 tags: Mattress, Good, Sleep
 category: Sleep
 excerpt: Designed by Fat Buddha Designs in Norfolk England.
-image: uploads/steven-wong-LcemoNqHIxY-unsplash.jpg
+image: uploads/woman-laying-on-bed.jpg
 image_caption: Photo by Steven Wong
 author: Will Moody
 created: 07-11-2019
