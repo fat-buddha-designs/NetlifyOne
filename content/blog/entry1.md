@@ -1,14 +1,14 @@
 ---
 title: Do you live your best life?
-excerpt: A Post using Markdown content imported from blog/posts
-image_caption: Photo by Will Moody
-created: 2019-01-02
 tags: Live, Best, Life
 category: Life
-image: uploads/josh-spires-dronenr-sqalflxisls-unsplash.jpg
+excerpt: A Post using Markdown content imported from blog/posts
+image: uploads/mindful-woman-sitting.jpg
+image_caption: Photo by Will Moody
 author: Will Moody
-date: 2021-03-01T16:54:56.672Z
+created: 18-01-2002
 published: true
+date: 2021-03-01T16:54:56.672Z
 ---
 
 ### A Post using Markdown content imported from blog/posts
