@@ -13,24 +13,24 @@ collections:
     create: true
     slug: "{{slug}}"
     fields:
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Tags", name: "tags", widget: "string"}
-      - {label: "Category", name: "category", widget: "string"}
+      - {label: "Title", name: "title", widget: "string", required: true}
+      - {label: "Tags, upto three with a comma between", name: "tags", widget: "string"}
+      - {label: "Category, just the one here please", name: "category", widget: "string"}
       - {label: "Excerpt", name: "excerpt", widget: "text"}
       - {label: "Image", name: "image", widget: "image"}
       - {label: "Image Caption", name: "image_caption", widget: "string"}
-      - {label: "Author", name: "author", widget: "string"}
-      - {label: "Created", name: "date", widget: "date"}
+      - {label: "Author", name: "author", widget: "string", required: true}
+      - {label: "Created", name: "date", widget: "date", required: true}
       - {label: "Content", name: "body", widget: "markdown"}
-      - {label: "Published", name: "published", widget: "boolean", default: false}
+      - {label: "Published, switch to publish this post", name: "published", widget: "boolean", default: false}
   - name: "gallery"
     label: "Gallery Entries"
     folder: "content/gallery"
     create: true
     slug: "{{galleryslug}}"
     fields:
-      - {label: "Gallery Image", name: "image", widget: "image"}
-      - {label: "Gallery Image Alt Description", name: "image_alt", widget: "string"}
+      - {label: "Gallery Image", name: "image", widget: "image", required: true}
+      - {label: "Gallery Image Alt Description", name: "image_alt", widget: "string", required: true}
   - label: "Pages"
     name: "pages"
     files:
