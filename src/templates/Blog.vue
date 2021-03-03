@@ -13,7 +13,7 @@
 
         <p class="is--meta">
           <span>Posted By </span
-          ><span class="is--italic"> {{ $page.blog.author.name }}</span>
+          ><span class="is--italic"> {{ $page.blog.author }}</span>
           <span> On </span
           ><span class="is--italic"
             ><time :datetime="$page.blog.datetime">{{
@@ -60,9 +60,7 @@ query($id: ID!) {
       title
       path
     }
-    author {
-      name
-    }
+    author
     tags {
       id
       title

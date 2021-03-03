@@ -37,15 +37,6 @@ module.exports = {
   },
   plugins: [
     {
-      use: `gridsome-plugin-netlify-cms`,
-      options: {
-        configPath: `static/admin/config.yml`,
-        htmlPath: `static/admin/index.html`,
-        htmlTitle: `Netlify-One CMS`,
-        publicPath: `/admin`,
-      },
-    },
-    {
       use: 'gridsome-plugin-robots-txt',
       options: {
         host: 'https://netlifyone.co.uk',
@@ -150,7 +141,6 @@ module.exports = {
         typeName: 'Blog',
         path: './content/blog/**/*.md',
         refs: {
-          author: 'Author',
           tags: {
             typeName: 'Tag',
             create: true,
@@ -163,6 +153,21 @@ module.exports = {
         remark: {
           autolinkHeadings: false,
         },
+      },
+    },
+    {
+      use: `gridsome-plugin-netlify-cms`,
+      options: {
+        configPath: `static/admin/config.yml`,
+        htmlPath: `static/admin/index.html`,
+        htmlTitle: `Netlify-One CMS`,
+        publicPath: `/admin`,
+      },
+    },
+    {
+      use: 'gridsome-plugin-netlify-cms-paths',
+      options: {
+        contentTypes: ['Blog'],
       },
     },
   ],

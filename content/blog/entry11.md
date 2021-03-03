@@ -5,9 +5,8 @@ image_caption: Photo by John Doe
 created: 2019-11-11
 tags: Gridsome, Framework, Vue.js
 category: Gridsome
-image: /images/uploads/marco-marques-dj_zl5lppto-unsplash.jpg
-author: Sally Smith
-date: 2021-03-03T13:28:50.674Z
+image: ./images/marco-marques-dj_zl5lppto-unsplash.jpg
+author: Peter Pan
 published: true
 ---
 

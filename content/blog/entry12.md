@@ -6,7 +6,7 @@ excerpt: Designed by Fat Buddha Designs in Norfolk England.
 created: 2019-12-24
 image: ./images/steven-wong-LcemoNqHIxY-unsplash.jpg
 image_caption: Photo by Steven Wong
-author: author3
+author: Will Moody
 published: true
 ---
 

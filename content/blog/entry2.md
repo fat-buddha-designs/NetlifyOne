@@ -6,7 +6,7 @@ excerpt: We are so quick to respond to your every need!
 created: 2019-02-05
 image: ./images/lukasz-szmigiel-jFCViYFYcus-unsplash.jpg
 image_caption: Photo by Luasz Szmigiel
-author: author3
+author: Ron Dennis
 published: true
 ---
 

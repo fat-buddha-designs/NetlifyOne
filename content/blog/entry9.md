@@ -6,7 +6,7 @@ excerpt: Gridsome is a super smashing framework based on Vue.js.
 created: 2019-09-03
 image: ./images/sergio-souza-mvb51ThjvRA-unsplash.jpg
 image_caption: Photo by Sergio Souza
-author: author3
+author: Peter Pan
 published: true
 ---
 

@@ -6,7 +6,7 @@ excerpt: Designed by the good guys at Fat Buddha Designs.
 created: 2019-08-02
 image: ./images/sadanand-lowanshi-6AnDyJ10_iQ-unsplash.jpg
 image_caption: Photo by Sadanand Lowanshi
-author: author2
+author: Will Moody
 published: true
 ---
 

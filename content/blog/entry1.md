@@ -5,9 +5,8 @@ image_caption: Photo by Will Moody
 created: 2019-01-02
 tags: Blog, Posts, Content
 category: Markdown
-image: /images/uploads/josh-spires-dronenr-sqalflxisls-unsplash.jpg
+image: ./images/josh-spires-dronenr-sqalflxisls-unsplash.jpg
 author: Will Moody
-date: 2021-03-03T12:52:37.028Z
 published: true
 ---
 

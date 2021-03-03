@@ -31,7 +31,7 @@
             <p>{{ entry.node.excerpt }}</p>
             <p class="is--meta">
               Posted By
-              <span class="is--italic"> {{ entry.node.author.name }} </span> On
+              <span class="is--italic"> {{ entry.node.author }} </span> On
               <span class="is--italic"
                 ><time :datetime="entry.node.datetime">{{
                   entry.node.humanTime
@@ -205,9 +205,7 @@ query($page: Int) {
         image_caption
         humanTime: created(format: "DD MMMM YYYY")
         datetime: created(format: "ddd MMM DD YYYY hh:mm:ss zZ")
-        author {
-          name
-        }
+        author
         category {
           title
         }
