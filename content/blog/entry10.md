@@ -1,12 +1,13 @@
 ---
-title: Post Ten
+title: Eat All The Colours
 excerpt: We do loads of business type stuff!
-image_caption: Photo by Me
+image_caption: A range of colourful foods
 created: 2019-10-31
 tags: Forest, Trees, Hugs
 category: Nature
-image: uploads/lukasz-szmigiel-jfcviyfycus-unsplash.jpg
+image: uploads/range-of-colourful-foods.jpg
 author: John Doe
+date: 2021-03-03T18:55:47.419Z
 published: true
 ---
 

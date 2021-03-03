@@ -1,12 +1,13 @@
 ---
-title: Post One
+title: Do you live your best life?
 excerpt: A Post using Markdown content imported from blog/posts
 image_caption: Photo by Will Moody
 created: 2019-01-02
-tags: Blog, Posts, Content
-category: Markdown
+tags: Live, Best, Life
+category: Life
 image: uploads/josh-spires-dronenr-sqalflxisls-unsplash.jpg
 author: Will Moody
+date: 2021-03-01T16:54:56.672Z
 published: true
 ---
 
