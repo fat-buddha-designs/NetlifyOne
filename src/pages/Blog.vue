@@ -33,9 +33,7 @@
               Posted By
               <span class="is--italic"> {{ entry.node.author }} </span> On
               <span class="is--italic"
-                ><time :datetime="entry.node.datetime">{{
-                  entry.node.humanTime
-                }}</time></span
+                ><time>{{ entry.node.humanTime }}</time></span
               >
             </p>
           </div>
@@ -89,7 +87,8 @@ export default {
         },
         {
           property: 'og:title',
-          content: 'An interesting collection of articles and posts | Netlify-One',
+          content:
+            'An interesting collection of articles and posts | Netlify-One',
         },
         {
           property: 'og:description',
@@ -113,7 +112,8 @@ export default {
         },
         {
           name: 'twitter:title',
-          content: 'An interesting collection of articles and posts | Netlify-One',
+          content:
+            'An interesting collection of articles and posts | Netlify-One',
         },
         {
           name: 'twitter:description',
@@ -203,8 +203,7 @@ query($page: Int) {
         path
         image
         image_caption
-        humanTime: created(format: "DD MMMM YYYY")
-        datetime: created(format: "ddd MMM DD YYYY hh:mm:ss zZ")
+        humanTime: created(format: "DD MM YYYY")
         author
         category {
           title
