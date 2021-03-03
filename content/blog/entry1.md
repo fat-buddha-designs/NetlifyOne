@@ -1,13 +1,14 @@
 ---
+title: Post One
 excerpt: A Post using Markdown content imported from blog/posts
 image_caption: Photo by Will Moody
 created: 2019-01-02
-title: Post One
 tags: Blog, Posts, Content
 category: Markdown
 image: ./images/josh-spires-dronenr-sQalFlXIsLs-unsplash.jpg
 author: author1
-published: false
+date: 2021-03-03T12:52:37.028Z
+published: true
 ---
 
 ### A Post using Markdown content imported from blog/posts
