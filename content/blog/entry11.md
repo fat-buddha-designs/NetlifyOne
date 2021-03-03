@@ -1,14 +1,14 @@
 ---
 title: Massage Guns
-excerpt: Gridsome is an awesome framework based on Vue.js.
-image_caption: Woman laying down being massaged by hand
-created: 2019-11-11
 tags: Massage, Guns, Massaging
 category: Gridsome
+excerpt: Gridsome is an awesome framework based on Vue.js.
 image: uploads/massage.jpg
+image_caption: Woman laying down being massaged by hand
 author: Peter Pan
-date: 2021-03-03T18:56:51.829Z
+created: 16-11-2011
 published: true
+date: 2021-03-03T18:56:51.829Z
 ---
 
 ### Gridsome is an awesome framework based on Vue.js
