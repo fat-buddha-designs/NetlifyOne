@@ -1,12 +1,13 @@
 ---
-title: Post Eleven
+title: Gridsome
+excerpt: Gridsome is an awesome framework based on Vue.js.
+image_caption: Photo by John Doe
+created: 2019-11-11
 tags: Gridsome, Framework, Vue.js
 category: Gridsome
-excerpt: Gridsome is an awesome framework based on Vue.js.
-created: 2019-11-11
-image: ./images/stephan-cassara-KnAIsBuitGg-unsplash.jpg
-image_caption: Photo by Stephan Cassara
-author: author3
+image: /images/uploads/marco-marques-dj_zl5lppto-unsplash.jpg
+author: Sally Smith
+date: 2021-03-03T13:28:50.674Z
 published: true
 ---
 
