@@ -41,7 +41,7 @@ module.exports = {
       options: {
         configPath: `static/admin/config.yml`,
         htmlPath: `static/admin/index.html`,
-        htmlTitle: `Maximum CMS`,
+        htmlTitle: `Netlify-One CMS`,
         publicPath: `/admin`,
       },
     },
