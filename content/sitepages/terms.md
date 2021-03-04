@@ -3,18 +3,18 @@ title: Terms of Use
 content: >-
   Welcome to our website. If you continue to browse and use this website, you
   are agreeing to comply with and be bound by the following terms and conditions
-  of use, which together with our privacy policy govern the 'Testing'
+  of use, which together with our privacy policy govern the 'Netlify-One'
   relationship with you in relation to this website. If you disagree with any
   part of these terms and conditions, please do not use our website.
 
 
-  'Testing' is committed to providing a website that is accessible to the widest possible audience, regardless of technology or ability. We are actively working to increase the accessibility and usability of our website and in doing so adhere to many of the available standards and guidelines.
+  'Netlify-One' is committed to providing a website that is accessible to the widest possible audience, regardless of technology or ability. We are actively working to increase the accessibility and usability of our website and in doing so adhere to many of the available standards and guidelines.
 
 
   Our checkpoints are taken from the technical standard [Web Content Accessibility Guidelines 2.0 (WCAG)](https://www.w3.org/WAI/intro/wcag), published by the [World Wide Web Consortium (W3C)](https://www.w3.org/).
 
 
-  The term 'Testing' or 'us' or 'we' refers to the owner of the website. The term 'you' refers to the user or viewer of our website.
+  The term 'Netlify-One' or 'us' or 'we' refers to the owner of the website. The term 'you' refers to the user or viewer of our website.
 
 
   The use of this website is subject to the following terms of use:
@@ -23,7 +23,7 @@ content: >-
   The content of the pages of this website is for your general information and use only. It is subject to change without notice.
 
 
-  This website uses cookies to monitor browsing preferences. If you do allow cookies to be used, the following personal information may be stored by us for use by third parties; See our [privacy policy](https://netlify-one.netlify.app/policies) page.
+  This website uses cookies to monitor browsing preferences. If you do allow cookies to be used, the following personal information may be stored by us for use by third parties; See our [privacy policy](/policies/) page.
 
 
   Neither we nor any third parties provide any warranty or guarantee as to the accuracy, timeliness, performance, completeness or suitability of the information and materials found or offered on this website for any particular purpose. You acknowledge that such information and materials may contain inaccuracies or errors and we expressly exclude liability for any such inaccuracies or errors to the fullest extent permitted by law.

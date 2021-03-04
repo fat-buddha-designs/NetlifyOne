@@ -1,13 +1,14 @@
 ---
-title: Meditation, Where To Start
-tags: Market Leaders, Local, Independent
-category: Mind
+title: How Healthy Is Your Gut Biome?
+tags: Healthy, Gut, Biome
+category: Nutrition
 excerpt: We are so quick to respond to your every need!
-image: ./images/mindfulness.jpg
-image_caption: Photo by Luasz Szmigiel
+image: uploads/gut-biome.jpg
+image_caption: Gut Biome Diagram
 author: Ron Dennis
-date: 2020-10-01T17:31:47.672Z
+created: 2021-02-01T12:26:51.666Z
 published: true
+date: 2020-10-01T17:31:47.672Z
 ---
 
 ### We are so quick to respond to your every need!

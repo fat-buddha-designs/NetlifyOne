@@ -6,8 +6,9 @@ excerpt: A Post using Markdown content imported from blog/posts
 image: ./images/mindful-woman-sitting.jpg
 image_caption: Photo by Will Moody
 author: Will Moody
-date: 2020-10-01T17:31:47.672Z
+created: 2021-03-05T12:25:09.064Z
 published: true
+date: 2020-10-01T17:31:47.672Z
 ---
 
 ### A Post using Markdown content imported from blog/posts
