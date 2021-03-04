@@ -3,10 +3,10 @@ title: Post Nine
 tags: Gridsome, Framework, Vue.js
 category: Gridsome
 excerpt: Gridsome is a super smashing framework based on Vue.js.
-created: 2019-09-03
-image: uploads/sergio-souza-mvb51ThjvRA-unsplash.jpg
+image: uploads/cereal-dish.jpg
 image_caption: Photo by Sergio Souza
 author: Peter Pan
+date: 2020-10-01T17:31:47.672Z
 published: true
 ---
 

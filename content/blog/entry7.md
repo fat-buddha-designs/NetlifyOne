@@ -1,15 +1,13 @@
 ---
 title: Are you sleeping at the right temperature?
-excerpt: |-
-  Lorem markdownum ipso iam capillis aether ceperat castra ille pectus. Iuvenes
+excerpt: Lorem markdownum ipso iam capillis aether ceperat castra ille pectus. Iuvenes
   omina credens. Sequuntur ora; facinus me videtur remi sacra et quae.
 image_caption: Photo by Riccardo Chiarini
-created: 2019-07-29
 tags: Sleeping, Correct, Temperature
 category: Sleep
 image: uploads/woman-laying-on-bed.jpg
 author: Sally Smith
-date: 2021-03-03T18:50:15.472Z
+date: 2020-10-01T17:31:47.672Z
 published: true
 ---
 

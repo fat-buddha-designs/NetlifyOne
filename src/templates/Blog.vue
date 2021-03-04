@@ -16,7 +16,7 @@
           ><span class="is--italic"> {{ $page.blog.author }}</span>
           <span> On </span
           ><span class="is--italic"
-            ><time>{{ $page.blog.humanTime }}</time></span
+            ><time>{{ $page.blog.date }}</time></span
           >,<span> Reading Time - {{ $page.blog.timeToRead }} minutes </span>
         </p>
         <p>
@@ -51,7 +51,7 @@ query($id: ID!) {
     image
     image_caption
     content
-    humanTime: created(format: "DD MM YYYY")
+    date(format: "D MMM Y")
     timeToRead
     category {
       title

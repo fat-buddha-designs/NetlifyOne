@@ -3,10 +3,10 @@ title: Post Three
 tags: Blog, Posts, Markdown
 category: Markdown
 excerpt: Markdown, the way to write blog posts.
-created: 2019-03-20
-image: uploads/marco-marques-dJ_Zl5LpPto-unsplash.jpg
+image: uploads/cereal-dish.jpg
 image_caption: Photo by Marco Marques
 author: Will Moody
+date: 2020-10-01T17:31:47.672Z
 published: true
 ---
 

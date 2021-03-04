@@ -30,10 +30,9 @@ collections:
       - { label: "Image Caption", name: "image_caption", widget: "string" }
       - { label: "Author", name: "author", widget: "string", required: true }
       - {
-          label: "Created",
+          label: "Published Date",
           name: "created",
-          widget: "date",
-          format: "DD-MM-YYYY",
+          widget: "datetime",
           required: true,
         }
       - { label: "Content", name: "body", widget: "markdown" }

@@ -33,7 +33,7 @@
               Posted By
               <span class="is--italic"> {{ entry.node.author }} </span> On
               <span class="is--italic"
-                ><time>{{ entry.node.humanTime }}</time></span
+                ><time>{{ entry.node.date }}</time></span
               >
             </p>
           </div>
@@ -189,7 +189,7 @@ query($page: Int) {
   allBlog(
     perPage: 6
     page: $page
-    sortBy: "created"
+    sortBy: "date"
     order: DESC
     filter: { published: { eq: true } }
   ) @paginate {
@@ -203,7 +203,7 @@ query($page: Int) {
         path
         image
         image_caption
-        humanTime: created(format: "DD MM YYYY")
+        date(format: "D MMM Y")
         author
         category {
           title

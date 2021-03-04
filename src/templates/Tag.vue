@@ -19,9 +19,7 @@
           <g-link :to="element.node.path">{{ element.node.title }}</g-link>
         </h3>
         <p class="is--meta">
-          <time :datetime="element.node.datetime">{{
-            element.node.humanTime
-          }}</time>
+          <time>{{ element.node.date }}</time>
         </p>
         <p>{{ element.node.excerpt }}</p>
       </article>
@@ -40,8 +38,7 @@ query($id: ID!) {
             id
             title
             path
-            humanTime: created(format: "Do MMMM YYYY")
-            datetime: created(format: "ddd MMM DD YYYY hh:mm:ss zZ")
+            date(format: "D MMM Y")
             excerpt
           }
         }

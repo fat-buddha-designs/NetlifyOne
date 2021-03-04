@@ -6,9 +6,8 @@ excerpt: Gridsome is an awesome framework based on Vue.js.
 image: uploads/massage.jpg
 image_caption: Woman laying down being massaged by hand
 author: Peter Pan
-created: 16-11-2011
+date: 2020-10-01T17:31:47.672Z
 published: true
-date: 2021-03-03T18:56:51.829Z
 ---
 
 ### Gridsome is an awesome framework based on Vue.js

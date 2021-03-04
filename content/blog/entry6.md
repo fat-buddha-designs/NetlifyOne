@@ -3,10 +3,10 @@ title: Post Six
 tags: Gridsome, Framework, Vue.js
 category: Gridsome
 excerpt: Gridsome is a super fast framework that builds static HTML pages!
-created: 2019-06-28
-image: uploads/qingbao-meng-01_igFr7hd4-unsplash.jpg
+image: uploads/cereal-dish.jpg
 image_caption: Photo by Qingbao Meng
 author: Ron Dennis
+date: 2020-10-01T17:31:47.672Z
 published: true
 ---
 

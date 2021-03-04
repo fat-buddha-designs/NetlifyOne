@@ -3,10 +3,10 @@ title: Post Two
 tags: Market Leaders, Local, Independent
 category: Business
 excerpt: We are so quick to respond to your every need!
-created: 2019-02-05
-image: uploads/lukasz-szmigiel-jFCViYFYcus-unsplash.jpg
+image: uploads/gut-biome.jpg
 image_caption: Photo by Luasz Szmigiel
 author: Ron Dennis
+date: 2020-10-01T17:31:47.672Z
 published: true
 ---
 

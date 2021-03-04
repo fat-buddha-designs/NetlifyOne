@@ -26,15 +26,14 @@
 
 <static-query>
 query latestPost {
-  allBlog(limit: 3, sortBy: "datetime", order: DESC) {
+  allBlog(limit: 3, sortBy: "date", order: DESC) {
     edges {
       node {
         title
         path
         image
         image_caption
-        humanTime: created(format: "DD MMMM YYYY")
-        datetime: created(format: "ddd MMM DD YYYY hh:mm:ss zZ")
+        date(format: "D MMMM Y")
         excerpt
       }
     }

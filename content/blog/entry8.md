@@ -3,10 +3,10 @@ title: Post Eight
 tags: Innovative, Modern, Futureproof
 category: Design
 excerpt: Designed by the good guys at Fat Buddha Designs.
-created: 2019-08-02
-image: uploads/sadanand-lowanshi-6AnDyJ10_iQ-unsplash.jpg
+image: uploads/exercising-woman.jpg
 image_caption: Photo by Sadanand Lowanshi
 author: Will Moody
+date: 2020-10-01T17:31:47.672Z
 published: true
 ---
 

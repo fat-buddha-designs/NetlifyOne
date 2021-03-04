@@ -3,10 +3,10 @@ title: Post Four
 tags: Blog, Posts, Markdown
 category: Markdown
 excerpt: We can help you write blog posts in super easy Markdown.
-created: 2019-04-01
-image: uploads/menghan-zhang-gnoY8Z0umg4-unsplash.jpg
+image: uploads/exercising-woman.jpg
 image_caption: Photo by Menghan Zhang
 author: Kiki Dee
+date: 2020-10-01T17:31:47.672Z
 published: true
 ---
 
