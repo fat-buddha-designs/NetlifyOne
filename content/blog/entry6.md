@@ -1,9 +1,9 @@
 ---
-title: Post Six
+title: Are You Brething Correctly?
 tags: Gridsome, Framework, Vue.js
-category: Gridsome
+category: Breathe
 excerpt: Gridsome is a super fast framework that builds static HTML pages!
-image: uploads/cereal-dish.jpg
+image: ./images/cereal-dish.jpg
 image_caption: Photo by Qingbao Meng
 author: Ron Dennis
 date: 2020-10-01T17:31:47.672Z

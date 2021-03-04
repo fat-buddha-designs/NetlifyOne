@@ -2,9 +2,9 @@
 title: Eat All The Colours
 excerpt: We do loads of business type stuff!
 image_caption: A range of colourful foods
-tags: Forest, Trees, Hugs
+tags: Eat, Range, Foods
 category: Nature
-image: uploads/range-of-colourful-foods.jpg
+image: ./images/range-of-colourful-foods.jpg
 author: John Doe
 date: 2020-10-01T17:31:47.672Z
 published: true

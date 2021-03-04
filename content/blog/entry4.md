@@ -1,9 +1,9 @@
 ---
-title: Post Four
+title: Are You Getting Enough Sleep?
 tags: Blog, Posts, Markdown
-category: Markdown
+category: Sleep
 excerpt: We can help you write blog posts in super easy Markdown.
-image: uploads/exercising-woman.jpg
+image: ./images/exercising-woman.jpg
 image_caption: Photo by Menghan Zhang
 author: Kiki Dee
 date: 2020-10-01T17:31:47.672Z

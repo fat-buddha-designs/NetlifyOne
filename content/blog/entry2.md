@@ -1,9 +1,9 @@
 ---
-title: Post Two
+title: Meditation, Where To Start
 tags: Market Leaders, Local, Independent
-category: Business
+category: Mind
 excerpt: We are so quick to respond to your every need!
-image: uploads/gut-biome.jpg
+image: ./images/mindfulness.jpg
 image_caption: Photo by Luasz Szmigiel
 author: Ron Dennis
 date: 2020-10-01T17:31:47.672Z

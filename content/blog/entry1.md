@@ -1,9 +1,9 @@
 ---
-title: Do you live your best life?
+title: Keep Moving?
 tags: Live, Best, Life
-category: Life
+category: Exercise
 excerpt: A Post using Markdown content imported from blog/posts
-image: uploads/mindful-woman-sitting.jpg
+image: ./images/mindful-woman-sitting.jpg
 image_caption: Photo by Will Moody
 author: Will Moody
 date: 2020-10-01T17:31:47.672Z

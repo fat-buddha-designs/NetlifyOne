@@ -1,9 +1,9 @@
 ---
-title: Post Eight
-tags: Innovative, Modern, Futureproof
-category: Design
+title: Calming Your Thoughts
+tags: Calm, You, Thoughts
+category: Mind
 excerpt: Designed by the good guys at Fat Buddha Designs.
-image: uploads/exercising-woman.jpg
+image: ./images/exercising-woman.jpg
 image_caption: Photo by Sadanand Lowanshi
 author: Will Moody
 date: 2020-10-01T17:31:47.672Z

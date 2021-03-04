@@ -3,59 +3,88 @@ backend:
   branch: main
   repo: fat-buddha-designs/NetlifyOne
 
-media_folder: 'static/uploads'
-public_folder: 'uploads'
+media_folder: "static/uploads"
+public_folder: "uploads"
 
 collections:
-  - name: 'blog'
-    label: 'Blog Posts'
-    folder: 'content/blog'
+  - name: "blog"
+    label: "Blog Posts"
+    folder: "content/blog"
     create: true
-    slug: '{{slug}}'
+    slug: "{{slug}}"
     fields:
-      - {label: 'Title', name: 'title', widget: 'string', required: true}
-      - {label: 'Tags, upto three with a comma between', name: 'tags', widget: 'string'}
-      - {label: 'Category, just the one here please', name: 'category', widget: 'string'}
-      - {label: 'Excerpt', name: 'excerpt', widget: 'text'}
-      - {label: 'Image', name: 'image', widget: 'image'}
-      - {label: 'Image Caption', name: 'image_caption', widget: 'string'}
-      - {label: 'Author', name: 'author', widget: 'string', required: true}
-      - {label: 'Created', name: 'created', widget: 'date', format: 'Do MMM YY', required: true}
-      - {label: 'Content', name: 'body', widget: 'markdown'}
-      - {label: 'Published, switch to publish this post', name: 'published', widget: 'boolean', default: false} 
-  - name: 'gallery'
-    label: 'Gallery Entries'
-    folder: 'content/gallery'
+      - { label: "Title", name: "title", widget: "string", required: true }
+      - {
+          label: "Tags, upto three with a comma between",
+          name: "tags",
+          widget: "string",
+        }
+      - {
+          label: "Category",
+          name: "category",
+          widget: "select",
+          options: ["Breathe", "Exercise", "Mind", "Nutrition", "Sleep"],
+        }
+      - { label: "Excerpt", name: "excerpt", widget: "text" }
+      - { label: "Image", name: "image", widget: "image" }
+      - { label: "Image Caption", name: "image_caption", widget: "string" }
+      - { label: "Author", name: "author", widget: "string", required: true }
+      - {
+          label: "Published Date",
+          name: "created",
+          widget: "datetime",
+          required: true,
+        }
+      - { label: "Content", name: "body", widget: "markdown" }
+      - {
+          label: "Published, switch to publish this post",
+          name: "published",
+          widget: "boolean",
+          default: false,
+        }
+  - name: "gallery"
+    label: "Gallery Entries"
+    folder: "content/gallery"
     create: true
-    slug: '{{galleryslug}}'
+    slug: "{{galleryslug}}"
     fields:
-      - {label: 'Gallery Image', name: 'image', widget: 'image', required: true}
-      - {label: 'Gallery Image Alt Description', name: 'image_alt', widget: 'string', required: true}
-  - label: 'Pages'
-    name: 'pages'
+      - {
+          label: "Gallery Image",
+          name: "image",
+          widget: "image",
+          required: true,
+        }
+      - {
+          label: "Gallery Image Alt Description",
+          name: "image_alt",
+          widget: "string",
+          required: true,
+        }
+  - label: "Pages"
+    name: "pages"
     files:
-      - label: 'Home Page'
-        name: 'index'
-        file: 'content/frontpage/index.md'
+      - label: "Home Page"
+        name: "index"
+        file: "content/frontpage/index.md"
         fields:
-          - {label: Heading, name: heading, widget: string}
-          - {label: First Block, name: first_section, widget: markdown}
-          - {label: Second Block, name: second_section, widget: markdown}
-      - label: 'About Page'
-        name: 'about'
-        file: 'content/sitepages/about.md'
+          - { label: Heading, name: heading, widget: string }
+          - { label: First Block, name: first_section, widget: markdown }
+          - { label: Second Block, name: second_section, widget: markdown }
+      - label: "About Page"
+        name: "about"
+        file: "content/sitepages/about.md"
         fields:
-          - {label: Title, name: title, widget: string}
-          - {label: Content, name: content, widget: markdown}
-      - label: 'Policy Page'
-        name: 'policies'
-        file: 'content/sitepages/policies.md'
+          - { label: Title, name: title, widget: string }
+          - { label: Content, name: content, widget: markdown }
+      - label: "Policy Page"
+        name: "policies"
+        file: "content/sitepages/policies.md"
         fields:
-          - {label: Title, name: title, widget: string}
-          - {label: Content, name: content, widget: markdown}
-      - label: 'Terms Of Use Page'
-        name: 'terms of use'
-        file: 'content/sitepages/terms.md'
+          - { label: Title, name: title, widget: string }
+          - { label: Content, name: content, widget: markdown }
+      - label: "Terms Of Use Page"
+        name: "terms of use"
+        file: "content/sitepages/terms.md"
         fields:
-          - {label: Title, name: title, widget: string}
-          - {label: Content, name: content, widget: markdown}
+          - { label: Title, name: title, widget: string }
+          - { label: Content, name: content, widget: markdown }

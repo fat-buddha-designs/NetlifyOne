@@ -1,9 +1,9 @@
 ---
-title: Post Nine
-tags: Gridsome, Framework, Vue.js
-category: Gridsome
+title: A Close Family
+tags: Family, Network, Closeness
+category: Mind
 excerpt: Gridsome is a super smashing framework based on Vue.js.
-image: uploads/cereal-dish.jpg
+image: ./images/cereal-dish.jpg
 image_caption: Photo by Sergio Souza
 author: Peter Pan
 date: 2020-10-01T17:31:47.672Z

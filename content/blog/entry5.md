@@ -1,9 +1,9 @@
 ---
-title: Post Five
+title: Are You Getting Enough Fibre?
 tags: Innovative, Modern, Futureproof
-category: Design
+category: Nutrition
 excerpt: Designed by real people, not robots.
-image: uploads/cereal-dish.jpg
+image: ./images/cereal-dish.jpg
 image_caption: Photo by Phoenix Han
 author: Kiki Dee
 date: 2020-10-01T17:31:47.672Z

@@ -1,9 +1,9 @@
 ---
-title: Post Three
+title: Your Gut Biome
 tags: Blog, Posts, Markdown
-category: Markdown
+category: Nutrition
 excerpt: Markdown, the way to write blog posts.
-image: uploads/cereal-dish.jpg
+image: ./images/cereal-dish.jpg
 image_caption: Photo by Marco Marques
 author: Will Moody
 date: 2020-10-01T17:31:47.672Z
