@@ -1,14 +1,14 @@
   // colors
   :root {
     // primary color
-    --color-pri-drk: hsl(var(--pri-hue), 100%, 40%);
-    --color-pri: hsl(var(--pri-hue), 100%, 50%);
-    --color-pri-lgt: hsl(var(--pri-hue), 100%, 60%);
+    --color-pri-drk: hsl(var(--pri-hue), 50%, 40%);
+    --color-pri: hsl(var(--pri-hue), 50%, 50%);
+    --color-pri-lgt: hsl(var(--pri-hue), 50%, 60%);
 
     // secondary color
-    --color-sec-drk: hsl(var(--sec-hue), 100%, 40%);
-    --color-sec: hsl(var(--sec-hue), 100%, 50%);
-    --color-sec-lgt: hsl(var(--sec-hue), 100%, 60%);
+    --color-sec-drk: hsl(var(--sec-hue), 60%, 40%);
+    --color-sec: hsl(var(--sec-hue), 60%, 50%);
+    --color-sec-lgt: hsl(var(--sec-hue), 60%, 60%);
 
     // black + white
     --color-blk: #000000;
@@ -56,11 +56,6 @@
     --color-yellow-drk: hsl(var(--yellow-hue), 100%, 40%);
     --color-yellow: hsl(var(--yellow-hue), 100%, 50%);
     --color-yellow-lgt: hsl(var(--yellow-hue), 100%, 60%);
-
-    --f-color: var(--color-g-8);
-    --bkg-color: var(--color-wh);
-    --bkg-color-drk: var(--color-g-1);
-    --bkg-color-drkr: var(--color-g-2);
 
     --scrollbarBG: var(--color-p);
     --thumbBG: var(--color-pri);

@@ -1,11 +1,12 @@
 ---
-title: Eat All The Colours
+title: Get Out In Nature
 excerpt: We do loads of business type stuff!
 image_caption: A range of colourful foods
 tags: Eat, Range, Foods
 category: Nature
-image: ./images/range-of-colourful-foods.jpg
+image: ./images/nature_benefits.svg
 author: John Doe
+created: 2021-03-05T12:25:09.064Z
 date: 2020-10-01T17:31:47.672Z
 published: true
 ---

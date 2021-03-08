@@ -10,7 +10,11 @@
       >
         The {{ $static.metadata.company }} Brand
       </h2>
-      <g-image class="full--width" src="~/assets/img/brand.jpg" alt="image" />
+      <g-image
+        class="full--width"
+        src="~/assets/img/wave-line.svg"
+        alt="image"
+      />
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error
         doloremque omnis animi, eligendi magni a voluptatum, vitae, consequuntur

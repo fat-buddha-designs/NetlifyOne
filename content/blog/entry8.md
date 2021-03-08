@@ -3,9 +3,10 @@ title: Calming Your Thoughts
 tags: Calm, You, Thoughts
 category: Mind
 excerpt: Designed by the good guys at Fat Buddha Designs.
-image: ./images/exercising-woman.jpg
+image: ./images/polygon-uminary.svg
 image_caption: Photo by Sadanand Lowanshi
 author: Will Moody
+created: 2021-03-05T12:25:09.064Z
 date: 2020-10-01T17:31:47.672Z
 published: true
 ---

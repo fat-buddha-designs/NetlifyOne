@@ -26,7 +26,7 @@
 
 <static-query>
 query latestPost {
-  allBlog(limit: 3, sortBy: "date", order: DESC) {
+  allBlog(limit: 4, sortBy: "date", order: DESC) {
     edges {
       node {
         title
@@ -51,8 +51,7 @@ export default {
 @import '~/assets/scss/base/_breakpoints.scss';
 
 .full--bleed--cont {
-  --auto-grid-min-size: 300px;
-  max-width: var(--cont-width);
+  --auto-grid-min-size: 280px;
   margin: auto;
   padding: 0 1rem;
   display: grid;
@@ -81,6 +80,7 @@ export default {
 
         img {
           margin-bottom: 0;
+          height: 15rem;
         }
       }
     }

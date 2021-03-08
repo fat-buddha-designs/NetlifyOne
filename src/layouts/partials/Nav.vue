@@ -100,7 +100,7 @@ export default {
       height: 2.6em;
 
       a {
-        color: var(--color-blk);
+        color: var(--f-color);
         padding-left: 0.6em;
         transition: all 0.35s var(--trans);
 
@@ -124,7 +124,7 @@ export default {
 
       .dropdown-menu,
       .dropdown-item {
-        background: var(--color-wh);
+        background: var(--color-bkg);
         border-radius: var(--bor-rad);
 
         a {
@@ -178,16 +178,16 @@ export default {
     .menu__holder {
       -ms-grid-column: 1;
       grid-column: 1;
-      background: var(--color-wh);
       border-right: var(--bor-dot);
       width: 200px;
+      background: var(--bkg-color);
 
       ul li {
         min-width: 100%;
 
         .dropdown-menu,
         .dropdown-item {
-          background: var(--color-wh);
+          background: var(--bkg-color);
           border-radius: var(--bor-rad);
         }
         .dropdown-menu {
@@ -264,7 +264,7 @@ export default {
     display: -ms-grid;
     display: grid;
     grid-template-columns: 1fr;
-    background: var(--color-wh);
+    background: var(--bkg-color);
 
     .menu__holder {
       display: -ms-flexbox;

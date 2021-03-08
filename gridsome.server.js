@@ -53,7 +53,6 @@ module.exports = function (api) {
     })
   })
 
-
   api.loadSource(async (store) => {
     store.addMetadata('company', 'Netlify One'),
       store.addMetadata('slogan', 'Netlify CMS Based Boilerplate'),
@@ -66,6 +65,7 @@ module.exports = function (api) {
       store.addMetadata('village', 'Blofield Heath'),
       store.addMetadata('city', 'Norwich'),
       store.addMetadata('county', 'Norfolk'),
-      store.addMetadata('postcode', 'NR13 5EJ')
+      store.addMetadata('postcode', 'NR13 5EJ'),
+      store.addMetadata('twitterCreator', '@Netlifyone')
   })
 }

@@ -1,85 +1,43 @@
-* {
-  /* Typography */
-  --responsive: calc((var(--min-font) * 1px) + (var(--max-font) - var(--min-font)) * ((100vw - 420px) / (1200 - 420)));
-  --h1-max: calc(var(--h2-max) * 1.2500);
-  --h1-min: calc(var(--h2-min) * 1.2500);
-  --h2-max: calc(var(--h3-max) * 1.2500);
-  --h2-min: calc(var(--h3-min) * 1.2500);
-  --h3-max: calc(var(--h4-max) * 1.2500);
-  --h3-min: calc(var(--h4-min) * 1.2500);
-  --h4-max: calc(var(--h5-max) * 1.2500);
-  --h4-min: calc(var(--h5-min) * 1.2500);
-  --h5-max: calc(var(--h6-max) * 1.2500);
-  --h5-min: calc(var(--h6-min) * 1.2500);
-  --h6-max: calc(var(--p-max) * 1.0000);
-  --h6-min: calc(var(--p-max) * 0.8888);
-  --p-min: calc(var(--p-max) * 0.8888);
-  --small-max: calc(var(--p-max) * 0.7);
-  --small-min: calc(var(--p-max) * 0.6);
-}
+/* Calculation */
+@mixin fluid-type($min-vw, $max-vw, $min-value, $max-value) {
+  $factor: 1 / ($max-vw - $min-vw) * ($max-value - $min-value);
+  $calc-value: unquote("#{ $min-value - ($min-vw * $factor) } + #{ 100vw * $factor }"
+  );
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: var(--color-pri);
-  font-weight: var(--h-font-wght);
-  line-height: var(--line-height-header);
-  font-family: var(--h-font);
-  text-align: var(--h-pos);
-  text-transform: uppercase;
-}
-
-
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin-top: 1rem;
-  margin-bottom: 0;
+  font-size: $min-value; // Fallback for older browsers
+  font-size: clamp(#{if($min-value > $max-value, $max-value, $min-value)},
+    #{$calc-value},
+    #{if($min-value > $max-value, $min-value, $max-value)});
 }
 
 h1 {
-  --max-font: var(--h1-max);
-  --min-font: var(--h1-min);
-  margin-top: 0;
-  margin-bottom: 0;
-  font-size: var(--responsive);
+  // Calling the mixin below…
+  @include fluid-type(20rem, 64rem, 2.2rem, 2.5rem);
 }
 
 h2 {
-  --max-font: var(--h2-max);
-  --min-font: var(--h2-min);
-  font-size: var(--responsive);
-  margin-bottom: 0.5em;
+  // Calling the mixin below…
+  @include fluid-type(20rem, 64rem, 1.8rem, 2rem);
 }
 
 h3 {
-  --max-font: var(--h3-max);
-  --min-font: var(--h3-min);
-  font-size: var(--responsive);
+  // Calling the mixin below…
+  @include fluid-type(20rem, 64rem, 1.5rem, 1.8rem);
 }
 
 h4 {
-
-  --max-font: var(--h4-max);
-  --min-font: var(--h4-min);
-  font-size: var(--responsive);
+  // Calling the mixin below…
+  @include fluid-type(20rem, 64rem, 1.3rem, 1.5rem);
 }
 
 h5 {
-  --max-font: var(--h5-max);
-  --min-font: var(--h5-min);
-  font-size: var(--responsive);
+  // Calling the mixin below…
+  @include fluid-type(20rem, 64rem, 1.2rem, 1.4rem);
 }
 
 h6 {
-  --max-font: var(--h6-max);
-  --min-font: var(--h6-min);
-  font-size: var(--responsive);
+  // Calling the mixin below…
+  @include fluid-type(20rem, 64rem, 1rem, 1.22rem);
 }
 
 p,
@@ -88,239 +46,107 @@ a,
 pre,
 code,
 blockquote,
+input,
+button {
+  // Calling the mixin below…
+  @include fluid-type(20rem, 64rem, 1rem, 1.2rem);
+}
+
+small,
+.is--meta {
+  // Calling the mixin below…
+  // @include fluid-type(20rem, 64rem, 0.75rem, 1rem);
+  @include fluid-type(20rem, 64rem, 0.75rem, 0.9rem);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  --l-spacing: 0;
+  --w-spacing: 0;
+  font-weight: var(--h-font-wght);
+  line-height: var(--line-height-header);
+  font-family: var(--h-font);
+  text-align: var(--h-pos);
+  letter-spacing: var(--l-spacing);
+  word-spacing: var(--w-spacing);
+  margin-bottom: 0.5em;
+}
+
+
+p,
+li,
+a,
+blockquote,
 small {
   font-weight: inherit;
   font-family: var(--b-font);
 }
 
-p,
-li,
-a,
-pre,
-code,
-blockquote {
-  --max-font: var(--p-max);
-  --min-font: var(--p-min);
-  font-size: var(--responsive);
-}
-
-small,
-.is--meta {
-  --max-font: var(--small-max);
-  --min-font: var(--small-min);
-  font-size: var(--responsive);
-}
-
-@include respond-to(md) {
-
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  p,
-  li,
-  a,
-  code,
-  blockquote,
-  small {
-    font-size: calc(var(--max-font) * 1px);
-  }
-}
-
-@media (max-width: 420px) {
-
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  p,
-  li,
-  a,
-  pre,
-  code,
-  blockquote,
-  small {
-    font-size: calc(var(--min-font) * 1px);
-  }
-}
 
 body,
 html {
   font-weight: var(--f-wght);
   line-height: var(--line-height);
   font-family: var(--b-font);
-  color: var(--f-color);
   font-style: normal;
   letter-spacing: var(--l-spacing);
   word-spacing: var(--w-spacing);
-  background: var(--bkgd-color);
   text-rendering: optimizeLegibility;
 }
 
-
-article>*+* {
-  margin-top: 1em;
-}
-
-
 p {
-  margin-top: 1em;
+  margin-bottom: 1em;
   white-space: normal;
   word-break: keep-all;
-
-  quotes: '“''”'"‘""’";
-  font-variant-ligatures: common-ligatures;
+  overflow-wrap: keep-all;
 
   &.is--indented {
     text-indent: var(--space-unit);
   }
 }
 
-
-pre {
-  display: block;
-  min-width: 100%;
-  padding: var(--space-xxs);
-  line-height: var(--line-height);
-  font-family: Monaco, Menlo, Consolas, 'Courier New', monospace;
-  white-space: pre-line;
-  word-wrap: break-word;
-  word-break: break-all;
-  background-color: var(--color-g-2);
-  border-radius: var(--bor-rad);
-}
-
-code {
-  display: block;
-  min-width: 100%;
-  padding: var(--space-xxs);
-  line-height: var(--line-height);
-  font-family: Monaco, Menlo, Consolas, 'Courier New', monospace;
-  white-space: pre-line;
-  word-wrap: break-word;
-  word-break: break-all;
-  background-color: var(--color-g-2);
-  border-radius: var(--bor-rad);
-}
-
-details {
-  padding: 0.6rem var(--space-unit);
-  background: var(--color-g-1);
-  border: var(--bor-mg);
-  border-radius: var(--bor-rad);
-}
-
-summary {
-  cursor: pointer;
-  font-weight: bold;
-}
-
-details[open] {
-  padding-bottom: 0.75rem;
-}
-
-details[open] summary {
-  margin-bottom: 6px;
-}
-
-details[open] > *:last-child {
-  margin-bottom: 0;
-}
-
-mark {
-  padding: var(--space-sm);
-  background: var(--color-g-1);
-  color: inherit;
-}
-
-dt {
-  font-weight: bold;
-}
-
-dd::before {
-  content: "→ ";
-}
-
-b,
-strong {
-  font-weight: bolder;
+.paragraph--heading {
+  line-height: 1;
+  margin-top: 2.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
 }
 
 small {
-  font-size: 80%;
-}
-
-sub {
-  bottom: -0.25em;
-}
-
-sup {
-  top: -0.5em;
-}
-
-abbr[title],
-abbr[data-original-title] {
-  text-decoration: underline dotted;
-  cursor: help;
-}
-
-small {
-  color: var(--color-g-6);
   font-style: italic;
 }
 
 blockquote {
-  margin: 1em 0;
-  padding: 0.6em;
+  margin: 0 0 1rem;
+  padding: var(--space-xxs);
+  font-weight: var(--f-wght);
   font-style: italic;
-  background-color: var(--color-g-2);
-  border-left: 2px solid var(--color-pri);
+  border-left: 5px solid var(--color-pri);
   border-radius: var(--bor-rad);
+  color: var(--f-color);
+  background-color: var(--color-p);
 }
 
-
-.lead,
 .is--meta {
-  color: var(--color-g-6);
+  color: var(--color-g-4);
 }
 
 .is--bold,
 b,
 strong {
-  font-weight: var(--h-font-wght);
-  font-family: var(--h-font);
+  font-weight: 600;
 }
 
 .is--italic {
   font-style: italic;
 }
 
-.is--underlined {
-  text-decoration: underline;
-}
 
-.is--capitalized {
-  text-transform: capitalize;
-}
-
-.is--lowercase {
-  text-transform: lowercase;
-}
-
-.is--uppercase {
-  text-transform: uppercase;
-}
-
-.is--smaller--text {
-  font-size: 0.85em;
-  color: var(--color-g-5);
-}
-
-@include respond-to(sm) {
+@media only screen and (max-width: 49.9rem) {
   body {
     text-rendering: optimizeSpeed;
   }

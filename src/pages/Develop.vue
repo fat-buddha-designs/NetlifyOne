@@ -10,7 +10,11 @@
       >
         How {{ $static.metadata.company }} Develop
       </h2>
-      <g-image class="full--width" src="~/assets/img/develop.jpg" alt="image" />
+      <g-image
+        class="full--width"
+        src="~/assets/img/colored-shapes.svg"
+        alt="image"
+      />
       <p>
         Consectetur adipisicing elit. Error doloremque omnis animi, eligendi
         magni a voluptatum, vitae, consequuntur rerum illum odit fugit assumenda

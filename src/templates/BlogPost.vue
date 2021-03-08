@@ -57,6 +57,7 @@ query($id: ID!, $previousElement: ID!, $nextElement: ID!) {
     path
     image
     image_caption
+    excerpt
     content
     date(format: "D MMM Y")
     timeToRead
@@ -83,6 +84,15 @@ query($id: ID!, $previousElement: ID!, $nextElement: ID!) {
 }
 </page-query>
 
+<static-query>
+query {
+  metadata {
+    siteUrl
+    twitterCreator
+  }
+}
+</static-query>
+
 <script>
 import PostListItem from '~/components/PostListItem.vue'
 export default {
@@ -93,6 +103,62 @@ export default {
   metaInfo() {
     return {
       title: this.$page.blog.title,
+      meta: [
+        {
+          name: 'description',
+          content: this.$page.blog.excerpt,
+        },
+        // open-graph tags
+        {
+          property: 'og:title',
+          content: this.$page.blog.title,
+        },
+        {
+          property: 'og:description',
+          content: this.$page.blog.excerpt,
+        },
+        {
+          property: 'og:image',
+          content: this.$page.blog.image || '',
+        },
+        {
+          property: 'og:url',
+          content: this.$static.metadata.siteUrl + this.$page.blog.path,
+        },
+        // twitter card
+        {
+          name: 'twitter:card',
+          content: this.$page.blog.image ? 'summary_large_image' : 'summary',
+        },
+        {
+          name: 'twitter:creator',
+          content: this.$static.metadata.twitterCreator,
+        },
+        { name: 'twitter:title', content: this.$page.blog.title },
+        { name: 'twitter:description', content: this.$page.blog.excerpt },
+      ],
+      // Some ld+json tags
+      script: [
+        {
+          type: 'application/ld+json',
+          json: {
+            '@context': 'http://schema.org',
+            '@type': 'BlogPosting',
+            description: this.$page.blog.description,
+            datePublished: this.$page.blog.datePublished,
+            dateModified: this.$page.blog.dateModified,
+            author: {
+              name: this.$page.blog.author,
+            },
+            headline: this.$page.blog.title,
+            image: this.$page.blog.image,
+            mainEntityOfPage: {
+              '@type': 'WebPage',
+              '@id': this.$static.metadata.siteUrl + this.$page.blog.path,
+            },
+          },
+        },
+      ],
     }
   },
 }
@@ -137,7 +203,7 @@ export default {
     display: block;
     margin-right: 0.5rem;
     position: relative;
-    top: 1.25rem;
+    top: 0.15rem;
   }
 
   .previous--next--link:nth-of-type(2)::after {
@@ -145,7 +211,7 @@ export default {
     display: block;
     margin-left: 0.5rem;
     position: relative;
-    top: 1.25rem;
+    top: 0.15rem;
   }
 }
 

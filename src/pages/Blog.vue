@@ -10,6 +10,13 @@
       >
         Blog
       </h2>
+      <section class="category--block">
+        <ul class="category--list">
+          <li v-for="{ node } in $page.categories.edges" :key="node.id">
+            <g-link :to="node.path">{{ node.title }}</g-link>
+          </li>
+        </ul>
+      </section>
       <div class="auto--grid">
         <article
           class="post--block"
@@ -212,11 +219,45 @@ query($page: Int) {
       }
     }
   }
+  categories: allCategory(sortBy: "title", order: ASC) {
+    edges {
+      node {
+        id
+        title
+        path
+      }
+    }
+  }
 }
 </page-query>
 
 <style lang="scss">
 @import '~/assets/scss/base/_breakpoints.scss';
+@import '~/assets/scss/base/_typography.scss';
+
+.category--block {
+  display: grid;
+  place-content: center;
+  margin: 0 auto;
+
+  .category--list {
+    display: flex;
+    flex-flow: row wrap;
+
+    li {
+      margin: 0.2rem;
+
+      a {
+        padding: 0.4rem;
+        color: var(--f-color);
+        background-color: var(--color-p-1);
+        @include fluid-type(20rem, 64rem, 1.5rem, 1.2rem);
+        border-radius: var(--bor-rad);
+      }
+    }
+  }
+}
+
 .post--block {
   padding-top: 0;
   border: var(--bor-lg);

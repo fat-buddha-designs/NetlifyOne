@@ -1,7 +1,8 @@
 <template>
   <header>
     <!-- /header -->
-    <h1
+    <p
+      class="header--text"
       data-aos="fade-left"
       data-aos-delay="100"
       data-aos-offset="50"
@@ -9,8 +10,9 @@
       data-aos-duration="1500"
     >
       {{ $static.metadata.company }}
-    </h1>
+    </p>
     <p
+      class="header--sub--text"
       data-aos="fade-up"
       data-aos-delay="200"
       data-aos-offset="50"
@@ -43,6 +45,9 @@ export default {
 </script>
 
 <style lang="scss">
+@import '~/assets/scss/base/_breakpoints.scss';
+@import '~/assets/scss/base/_typography.scss';
+
 header {
   display: -ms-flexbox;
   display: flex;
@@ -50,37 +55,34 @@ header {
   align-content: center;
   width: 100%;
   overflow: hidden;
-  background: linear-gradient(black, black),
-    url('~@/assets/img/header-background.jpg');
+  background-image: url('~@/assets/img/world-map.svg');
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-blend-mode: saturation;
 
-  h1,
-  p {
+  .header--text,
+  .header--sub--text {
     text-align: center;
     text-shadow: 1px 1px 2px #444;
   }
 
-  h1 {
+  .header--text {
     color: var(--color-wh);
     padding-top: 1em;
+    @include fluid-type(20rem, 64rem, 3rem, 4.5rem);
   }
 
-  p {
+  .header--sub--text {
     margin-top: 0;
     padding-bottom: 1em;
-    --max-font: 30;
-    --min-font: 24;
-    font-size: var(--responsive);
+    @include fluid-type(20rem, 64rem, 2rem, 3rem);
     color: var(--color-g-4);
     font-style: italic;
     font-weight: 400;
   }
 }
 
-@media only screen and (min-width: 49.9rem) {
+@include respond-to(sm) {
   header {
     padding: 2.8em;
 
@@ -92,13 +94,13 @@ header {
   }
 }
 
-@media only screen and (min-width: 64rem) {
+@include respond-to(md) {
   header {
     padding: 5em;
   }
 }
 
-@media only screen and (min-width: 80rem) {
+@include respond-to(lg) {
   header {
     padding: 8em;
   }

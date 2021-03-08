@@ -1,16 +1,17 @@
 ---
-title: Are You Brething Correctly?
-tags: Gridsome, Framework, Vue.js
+title: Are You Breathing Correctly?
+tags: Breath, Nose, Mouth, Breathing
 category: Breathe
-excerpt: Gridsome is a super fast framework that builds static HTML pages!
-image: ./images/cereal-dish.jpg
+excerpt: Breathing through your mouth is not god for your health
+image: ./images/circuit-primary.svg
 image_caption: Photo by Qingbao Meng
 author: Ron Dennis
+created: 2021-03-05T12:25:09.064Z
 date: 2020-10-01T17:31:47.672Z
 published: true
 ---
 
-### Gridsome is a super fast framework that builds static HTML pages!
+Breathing through your mouth is not god for your health
 
 Lorem markdownum tremuisse suis. Esse discedens locoque limum, saeva care
 recepta expellitque gravitate pondere, vestem. Mariti Panthoides este, sequuntur

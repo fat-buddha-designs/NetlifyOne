@@ -1,21 +1,18 @@
 <!-- Default Layout -->
 <template>
   <div id="app">
+    <ToggleTheme />
     <Accessibiliity />
-    <Header />
     <Nav />
-    <Banner />
+    <Header />
 
     <main id="main" role="main" tabindex="-1">
-      <!-- /main -->
       <slot />
     </main>
-    <!-- /main -->
 
     <SocialBanner />
     <Footer />
     <Copyright />
-    <CookieConsent />
     <Scrollup />
   </div>
 </template>
@@ -23,25 +20,23 @@
 <script>
 import AOS from 'aos'
 import 'aos/dist/aos.css'
+import ToggleTheme from '~/layouts/partials/ToggleTheme.vue'
 import Accessibiliity from '~/layouts/partials/Accessibility.vue'
 import Nav from '~/layouts/partials/Nav.vue'
 import Header from '~/layouts/partials/Header.vue'
-import Banner from '~/layouts/partials/Banner.vue'
 import SocialBanner from '~/layouts/partials/SocialBanner.vue'
 import Footer from '~/layouts/partials/Footer.vue'
 import Copyright from '~/layouts/partials/Copyright.vue'
-import CookieConsent from '~/layouts/partials/CookieConsent.vue'
 import Scrollup from '~/layouts/partials/Scrollup.vue'
 export default {
   components: {
+    ToggleTheme,
     Accessibiliity,
     Nav,
     Header,
-    Banner,
     SocialBanner,
     Footer,
     Copyright,
-    CookieConsent,
     Scrollup,
   },
 
@@ -97,32 +92,22 @@ html {
 @media not all and (prefers-color-scheme: dark) {
   :root {
     --f-color: var(--color-g-wh);
-    --bkg-color: var(--color-10);
+    --bkg-color: var(--color-blk);
+    --color-p: var(--color-g-7);
+    --color-p-1: var(--color-g-8);
   }
-}
-
-[data-theme*='dark'] {
-  --f-color: var(--color-wh);
-  --bkg-color: var(--color-g-9);
-  --bkg-color-drk: var(--color-g-10);
-  --bkg-color-drkr: var(--color-g-11);
-  --bkg-color-drkt: var(--color-g-12);
-}
-
-[data-theme*='sepia'] {
-  --f-color: var(--color-g-11);
-  --bkg-color: hsl(42, 54%, 88%);
-  --bkg-color-drk: hsl(42, 54%, 80%);
-  --bkg-color-drkr: hsl(42, 54%, 72%);
-  --bkg-color-drkt: hsl(42, 54%, 64%);
 }
 
 [data-theme*='light'] {
   --f-color: var(--color-g-10);
   --bkg-color: var(--color-wh);
-  --bkg-color-drk: var(--color-p);
-  --bkg-color-drkr: var(--color-p-2);
-  --bkg-color-drkt: var(--color-p-3);
+}
+
+[data-theme*='dark'] {
+  --f-color: var(--color-wh);
+  --bkg-color: var(--color-blk);
+  --color-p: var(--color-g-7);
+  --color-p-1: var(--color-g-8);
 }
 
 body {
@@ -194,10 +179,13 @@ main {
     right: 50%;
     margin-left: -50vw;
     margin-right: -50vw;
+    display: grid;
+    place-content: center;
   }
 
   section,
   article {
+    margin-top: 1.5em;
     a {
       color: var(--color-pri);
       text-decoration: none;

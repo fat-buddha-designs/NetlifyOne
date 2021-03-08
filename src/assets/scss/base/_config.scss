@@ -2,14 +2,12 @@
   // Consistent settings
 
   // Colours
-  --pri-hue: 40;
-  --sec-hue: 40;
+  --pri-hue: 212;
+  --sec-hue: 350;
   --orange-hue: 22;
   --red-hue: 0;
   --green-hue: 120;
   --yellow-hue: 60;
-  --f-color: var(--color-g-8);
-  --bkgd-color: var(--color-wh);
   // Content Wiidth - for sections and articles
   --cont-width: 100ch;
   // Borders
@@ -26,14 +24,14 @@
   --line-height-header: 1.2;
   --line-height-list: 1.7;
   /* Typography */
-  --h-font: 'Livvic', sans-serif;
-  --b-font: 'Raleway', sans-serif;
+  --h-font: Constantia, 'Lucida Bright', Lucidabright, 'Lucida Serif', Lucida, 'DejaVu Serif', 'Bitstream Vera Serif', 'Liberation Serif';
+  --b-font: Constantia, 'Lucida Bright', Lucidabright, 'Lucida Serif', Lucida, 'DejaVu Serif', 'Bitstream Vera Serif', 'Liberation Serif';
   --l-spacing: 0.06em;
   --w-spacing: 0.08em;
   --h-pos: left;
-  --f-wght: 400;
-  --h-font-wght: 700;
-  --p-max: 18;
+  --f-wght: 300;
+  --h-font-wght: 300;
+  --p-max: 20;
   // Transitions
   --trans: ease-in-out;
   --dur: 0.35s;

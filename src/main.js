@@ -1,18 +1,11 @@
-// This is the main.js file. Import global CSS and scripts here.
-// The Client API can be used here. Learn more: gridsome.org/docs/client-api
-require('typeface-livvic')
-require('typeface-raleway')
 import DefaultLayout from '~/layouts/Default.vue'
-//Bootstrap-Vue
+
 import BootstrapVue from 'bootstrap-vue'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
-//Cookie Consent
-import 'vue-cookie-accept-decline/dist/vue-cookie-accept-decline.css'
-import VueCookieAcceptDecline from 'vue-cookie-accept-decline'
-// Scss
+
 import '~/assets/scss/styles.scss'
-// Font Awesome
+
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { config, library } from '@fortawesome/fontawesome-svg-core'
 import {
@@ -68,7 +61,6 @@ export default function (Vue, { router, head, isClient }) {
   // Set default layout as a global component
   Vue.component('Layout', DefaultLayout)
   Vue.component('font-awesome', FontAwesomeIcon)
-  Vue.component('vue-cookie-accept-decline', VueCookieAcceptDecline)
   Vue.use(BootstrapVue)
   // Add attributes to HTML tag
   head.htmlAttrs = { lang: 'en', dir: 'ltr' }

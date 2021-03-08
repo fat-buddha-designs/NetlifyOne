@@ -1,37 +1,37 @@
 {
   "block": [
     {
-      "img": "brand.jpg",
+      "img": "wave-line.svg",
       "alt": "cans showing different brands",
       "title": "Websites",
       "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, ducimus consectetur! Temporibus magnam commodi omnis harum accusantium"
     },
     {
-      "img": "code.jpg",
+      "img": "virus.svg",
       "alt": "computer screen showing code",
       "title": "Apps",
       "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, ducimus consectetur! Temporibus magnam commodi omnis harum accusantium"
     },
     {
-      "img": "develop.jpg",
+      "img": "stock-chart.svg",
       "alt": "computer on desk",
       "title": "Intranets",
       "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, ducimus consectetur! Temporibus magnam commodi omnis harum accusantium"
     },
     {
-      "img": "code.jpg",
+      "img": "cloudy.svg",
       "alt": "computer screen showing code",
       "title": "Blogs",
       "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, ducimus consectetur! Temporibus magnam commodi omnis harum accusantium"
     },
     {
-      "img": "develop.jpg",
+      "img": "sprinkle.svg",
       "alt": "computer on desk",
       "title": "Headless CMS",
       "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, ducimus consectetur! Temporibus magnam commodi omnis harum accusantium"
     },
     {
-      "img": "brand.jpg",
+      "img": "world-map.svg",
       "alt": "cans showing different brands",
       "title": "Awesomeeness",
       "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, ducimus consectetur! Temporibus magnam commodi omnis harum accusantium"

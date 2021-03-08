@@ -1,7 +1,10 @@
 <template>
   <Layout>
-    <section v-for="{ node } in $page.allIndexPage.edges" :key="node.id">
-      <article>
+    <section>
+      <article
+        v-for="{ node } in $page.allIndexPageFirstBlock.edges"
+        :key="node.id"
+      >
         <h2
           data-aos="fade-in"
           data-aos-delay="100"
@@ -11,11 +14,14 @@
         >
           {{ node.heading }}
         </h2>
-        <div v-html="node.first_section" />
+        <div v-html="node.content" />
       </article>
       <FullBleed />
-      <article>
-        <div v-html="node.second_section" />
+      <article
+        v-for="{ node } in $page.allIndexPageSecondBlock.edges"
+        :key="node.id"
+      >
+        <div v-html="node.content" />
       </article>
     </section>
   </Layout>
@@ -23,12 +29,20 @@
 
 <page-query>
 query {
-  allIndexPage {
+  allIndexPageFirstBlock {
     edges {
       node {
+        title
         heading
-        first_section
-        second_section
+        content
+      }
+    }
+  }
+  allIndexPageSecondBlock {
+    edges {
+      node {
+        title
+        content
       }
     }
   }
@@ -48,7 +62,7 @@ export default {
       link: [
         {
           rel: 'canonical',
-          href: 'https://Netlify-Onethree.co.uk/',
+          href: 'https://netlify-one.co.uk/',
         },
       ],
       meta: [
@@ -75,7 +89,7 @@ export default {
         },
         {
           property: 'og:url',
-          content: 'https://Netlify-Onethree.co.uk/',
+          content: 'https://netlify-one.co.uk/',
         },
         {
           property: 'og:title',
@@ -88,7 +102,7 @@ export default {
         },
         {
           property: 'og:image',
-          content: 'https://Netlify-Onethree.co.uk/assets/img/header-background.jpg',
+          content: 'https://netlify-one.co.uk/assets/img/header-background.jpg',
         },
         {
           name: 'twitter:card',
@@ -113,7 +127,7 @@ export default {
         },
         {
           name: 'twitter:image',
-          content: 'https://Netlify-Onethree.co.uk/assets/img/header-background.jpg',
+          content: 'https://netlify-one.co.uk/assets/img/header-background.jpg',
         },
       ],
       script: [
@@ -123,10 +137,10 @@ export default {
             '@context': 'http://www.schema.org',
             '@type': 'LocalBusiness',
             name: 'Netlify-One',
-            url: 'https://www.Netlify-Onethree.co.uk/',
-            logo: 'https://www.Netlify-Onethree.co.uk/assets/img/favicon.png',
+            url: 'https://www.netlify-one.co.uk/',
+            logo: 'https://www.netlify-one.co.uk/assets/img/favicon.png',
             image:
-              'https://www.Netlify-Onethree.co.uk/assets/img/header-background.jpg',
+              'https://www.netlify-one.co.uk/assets/img/header-background.jpg',
             description:
               'Netlify-Onethree offer lots of lovely services to help you live a fulfilling life',
             address: {

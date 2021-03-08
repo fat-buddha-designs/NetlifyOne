@@ -1,37 +1,20 @@
 ---
-title: A Close Family
-tags: Family, Network, Closeness
-category: Mind
-excerpt: Gridsome is a super smashing framework based on Vue.js.
-image: ./images/cereal-dish.jpg
-image_caption: Photo by Sergio Souza
+title: Hiking In The Great Outdoors
+tags: Hiking, Outdoors, Benefits
+category: Nature
+excerpt: Getting out and hiking is good for your body and soul.
+image: ./images/hiking.svg
+image_caption: Image by Undraw
 author: Peter Pan
+created: 2021-03-05T12:25:09.064Z
 date: 2020-10-01T17:31:47.672Z
 published: true
 ---
 
-### Gridsome is a super smashing framework based on Vue.js
+Getting out and hiking is good for your body and soul.
 
-Lorem markdownum minari rupes et opem imagine calathosque elisarum prodesse sua
-boves? Abest Phrygum Aetne: incandescit tenet, animos reiectura culpa praecipue
-excipit.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ultrices neque ornare aenean euismod elementum nisi quis. Mattis ullamcorper velit sed ullamcorper morbi tincidunt. Luctus accumsan tortor posuere ac ut consequat. In hac habitasse platea dictumst. Accumsan lacus vel facilisis volutpat est velit egestas dui id. Vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant. Nisl pretium fusce id velit.
 
-Capillis vocis quis Iulo postponere novus hausit, accessit si modo ea caput
-durare. Nec tereti ausum auxilio pluma, seminaque corpus iter. Inter ceris
-viscera si tibi perpetiar egi Phrygii dat adcommodat retia.
+Eu nisl nunc mi ipsum faucibus vitae. Porttitor leo a diam sollicitudin tempor id eu nisl. Magna eget est lorem ipsum dolor sit amet. Pretium viverra suspendisse potenti nullam. Sed viverra tellus in hac. Senectus et netus et malesuada fames ac turpis egestas. Orci porta non pulvinar neque laoreet suspendisse. Odio eu feugiat pretium nibh ipsum consequat nisl vel.
 
-Ferebant talia generatus se quod contemne. Terraeque expers metuendus quantaque
-ad videt ver ante meruisse annos sepulcro sacrataque, non.
-
-1. Pectora insanaque in scelus secum
-2. Aequoris vidi
-3. Et petit
-4. Speciosam parentes aurea patre visamque dominasque mihi
-
-### What can I do with the super smashing stuff?
-
-Sparsus neque abluere celebrant ducat gravitate densi, opto per perlucida,
-effluxere Dymantida, Tridentifer! Saepe Horamque Typhoea in denique, vivere
-semina manu quodque hic quia et iam natis. Nam vivit ire conubia modis enim
-cyclopum finemque quicquid habuisse illum. Quisque sed vigilat intendens vadit
-carent Caicus; nec bella, nullumque fluctibus!
+Tempor id eu nisl nunc. Fusce ut placerat orci nulla. Lacus vel facilisis volutpat est velit egestas dui id ornare. Donec ac odio tempor orci dapibus ultrices. Eget nullam non nisi est sit. Vestibulum morbi blandit cursus risus at ultrices mi tempus. Lacus sed viverra tellus in hac habitasse platea. Velit ut tortor pretium viverra suspendisse. Sit amet mattis vulputate enim nulla aliquet porttitor lacus. Libero enim sed faucibus turpis in eu mi. In ante metus dictum at tempor commodo ullamcorper. Orci eu lobortis elementum nibh tellus molestie nunc. Amet dictum sit amet justo donec. Scelerisque in dictum non consectetur a erat nam at lectus. Netus et malesuada fames ac turpis egestas. Non tellus orci ac auctor augue mauris. Fusce ut placerat orci nulla pellentesque dignissim enim sit.

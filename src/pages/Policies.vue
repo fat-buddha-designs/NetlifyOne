@@ -39,7 +39,8 @@ export default {
         },
         {
           name: 'keywords',
-          content: 'Policies, Accessibility, Cookies, Privacy, Awesome, Netlify-One',
+          content:
+            'Policies, Accessibility, Cookies, Privacy, Awesome, Netlify-One',
         },
         {
           property: 'og:locale',

@@ -10,7 +10,7 @@
       >
         {{ $static.metadata.company }}'s Designs
       </h2>
-      <g-image class="full--width" src="~/assets/img/code.jpg" alt="image" />
+      <g-image class="full--width" src="~/assets/img/hexagon.svg" alt="image" />
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error
         doloremque omnis animi, eligendi magni a voluptatum, vitae, consequuntur
