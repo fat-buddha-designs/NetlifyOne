@@ -187,10 +187,10 @@ export default {
 
         .dropdown-menu,
         .dropdown-item {
-          background: var(--bkg-color);
           border-radius: var(--bor-rad);
         }
         .dropdown-menu {
+          background: var(--bkg-color);
           margin-left: 0.6em;
         }
 
@@ -273,6 +273,7 @@ export default {
 
       ul {
         li {
+          background: var(--bkg-color);
           a {
             padding-right: 0.8em;
             padding-left: 0.8em;
