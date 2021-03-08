@@ -4,7 +4,7 @@ backend:
   repo: fat-buddha-designs/NetlifyOne
 
 media_folder: "static/uploads"
-public_folder: "uploads"
+public_folder: "/uploads"
 
 collections:
   - name: "blog"

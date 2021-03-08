@@ -101,7 +101,7 @@ module.exports = {
         theme_color: '#ffffff',
         lang: 'en',
       },
-    }, 
+    },
     {
       use: '@gridsome/plugin-critical',
       options: {
@@ -207,9 +207,10 @@ module.exports = {
     },
     {
       use: 'gridsome-plugin-netlify-cms-paths',
-      // options: {
-      //   contentTypes: ['Blog'],
-      // },
+      options: {
+        contentTypes: ['Blog'],
+        coverField: 'image',
+      },
     },
   ],
   templates: {
