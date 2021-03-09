@@ -10,8 +10,7 @@ created: 2021-02-28T08:16:58.105Z
 published: true
 date: 2020-10-01T17:31:47.672Z
 ---
-
-### Designed by Fat Buddha Designs in Norfolk England.
+### A Blog Post by Fat Buddha Designs in Norfolk England.
 
 Lorem markdownum artesque tu quidem lanigeris! Amari aliquis Ismarios,
 hospitiique nullum ab enim Pagasaea probabant armis iniuria inponi. Primus
@@ -19,7 +18,7 @@ Aonius graves at inductas nec motu, qui pinetis. Anxius nec ibimus utque illa
 circa video est fuit labores alas. Huic per quantum undis, Themis et quamvis
 gramine missisque leonibus.
 
-### Who is this FatBuddha?
+### Why Use Netlify CMS?
 
 Et Trachinia paelex strata signumque antris urbesque possem, nam nec inmissusque
 primo. Tergora fuit cum nubilibus quoque Troiae laboriferi vidit ponentem
