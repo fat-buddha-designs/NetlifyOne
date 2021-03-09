@@ -135,6 +135,19 @@ module.exports = {
       },
     },
     {
+      use: 'gridsome-plugin-flexsearch',
+      options: {
+        searchFields: ['title', 'excerpt', 'content'],
+        collections: [
+          {
+            typeName: 'Blog',
+            indexName: 'Blog',
+            fields: ['title', 'excerpt', 'content'],
+          },
+        ],
+      },
+    },
+    {
       use: '@gridsome/source-filesystem',
       options: {
         typeName: 'Author',

@@ -21,15 +21,14 @@
     "aos": "^2.3.4",
     "bootstrap": "^4.4.1",
     "bootstrap-vue": "^2.2.2",
-    "flexsearch": "^0.6.32",
     "gridsome": "^0.7.21",
+    "gridsome-plugin-flexsearch": "^1.0.5",
     "gridsome-plugin-netlify-cms": "^1.0.9",
     "gridsome-plugin-netlify-cms-paths": "^0.3.1",
     "gridsome-plugin-robots-txt": "^1.0.2",
     "gridsome-source-static-meta": "github:noxify/gridsome-source-static-meta#master",
     "klaro-gridsome": "^1.0.3",
-    "vue": "^2.6.11",
-    "vue-cookie-accept-decline": "^5.3.1"
+    "vue": "^2.6.11"
   },
   "devDependencies": {
     "@vue/cli-plugin-eslint": "^4.5.11",
