@@ -131,7 +131,7 @@ export default {
         {
           key: 'og:image',
           property: 'og:image',
-          content: this.$static.metadata.siteUrl + this.$page.blog.image,
+          content: this.$static.metadata.siteUrl + this.$page.blog.image.src,
         },
         {
           key: 'og:url',
@@ -151,9 +151,9 @@ export default {
           name: 'twitter:creator',
           content: this.$static.metadata.twitterCreator,
         },
-        { key: 'twitter:image',
+        {
           name: 'twitter:image',
-          content: this.$static.metadata.siteUrl + this.$page.blog.image,
+          content: this.$static.metadata.siteUrl + this.$page.blog.image.src,
         },
         {
           name: 'twitter:title',
@@ -172,12 +172,12 @@ export default {
           json: {
             '@context': 'http://schema.org',
             '@type': 'BlogPosting',
-            description: this.$page.blog.description,
+            description: this.$page.blog.excerpt,
             author: {
               name: this.$page.blog.author,
             },
             headline: this.$page.blog.title,
-            image: this.$page.blog.image,
+            image: this.$page.blog.image.src,
             mainEntityOfPage: {
               '@type': 'WebPage',
               '@id': this.$static.metadata.siteUrl + this.$page.blog.path,
