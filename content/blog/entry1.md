@@ -3,7 +3,7 @@ title: Avoiding Viruses
 tags: Virus, Pandemic, Avoid
 category: Envirnoment
 excerpt: The key to avoiding viruses duringa pandemic is isolation from carriers.
-image: ./images/virus.svg
+image: ./images/virus.png
 image_caption: Photo by Will Moody
 author: Will Moody
 created: 2021-03-05T12:25:09.064Z

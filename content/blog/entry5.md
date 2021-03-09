@@ -3,7 +3,7 @@ title: The Benefits of A Yoga Practice?
 tags: Benefits, Yoga, Practice
 category: Exercise
 excerpt: There are many benefits of doing a regular yoga practice, including better balance and stamina.
-image: ./images/yoga.svg
+image: ./images/yoga.png
 image_caption: Image by Undraw
 author: Kiki Dee
 created: 2021-03-05T12:25:09.064Z

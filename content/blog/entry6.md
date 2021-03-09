@@ -3,7 +3,7 @@ title: Are You Breathing Correctly?
 tags: Breath, Nose, Mouth, Breathing
 category: Breathe
 excerpt: Breathing through your mouth is not god for your health
-image: ./images/circuit-primary.svg
+image: ./images/circuit-primary.png
 image_caption: Photo by Qingbao Meng
 author: Ron Dennis
 created: 2021-03-05T12:25:09.064Z

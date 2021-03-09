@@ -2,7 +2,7 @@
 title: Are you sleeping at the right temperature?
 tags: Sleeping, Correct, Temperature
 category: Sleep
-image: ./images/sleep_analysis.svg
+image: ./images/sleep_analysis.png
 image_caption: Photo by Riccardo Chiarini
 excerpt: Lorem markdownum ipso iam capillis aether ceperat castra ille pectus. Iuvenes
   omina credens. Sequuntur ora; facinus me videtur remi sacra et quae.

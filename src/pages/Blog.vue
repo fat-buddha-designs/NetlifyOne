@@ -28,6 +28,7 @@
               <g-image
                 :alt="entry.node.image_caption"
                 :src="entry.node.image"
+                width="1000"
               />
             </figure>
           </g-link>

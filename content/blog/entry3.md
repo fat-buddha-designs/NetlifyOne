@@ -3,7 +3,7 @@ title: The Hidden Wavelengths
 tags: Wave, Hidden, Secret
 category: Technology
 excerpt: Did you realise there are over twenty hidden wavelengths?
-image: ./images/wave-line.svg
+image: ./images/wave-line.png
 image_caption: A wave form line
 author: Will Moody
 created: 2021-03-05T12:25:09.064Z

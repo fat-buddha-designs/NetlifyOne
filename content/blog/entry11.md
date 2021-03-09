@@ -3,7 +3,7 @@ title: Buying Stocks & shares
 tags: Buying, Stocks, Shares
 category: Money
 excerpt: Gridsome is an awesome framework based on Vue.js.
-image: ./images/stock-chart.svg
+image: ./images/stock-chart.png
 image_caption: Woman laying down being massaged by hand
 author: Peter Pan
 created: 2021-02-28T12:25:37.415Z

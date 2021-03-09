@@ -3,7 +3,7 @@ title: Hiking In The Great Outdoors
 tags: Hiking, Outdoors, Benefits
 category: Nature
 excerpt: Getting out and hiking is good for your body and soul.
-image: ./images/hiking.svg
+image: ./images/hiking.png
 image_caption: Image by Undraw
 author: Peter Pan
 created: 2021-03-05T12:25:09.064Z

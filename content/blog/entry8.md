@@ -3,7 +3,7 @@ title: Calming Your Thoughts
 tags: Calm, You, Thoughts
 category: Mind
 excerpt: Designed by the good guys at Fat Buddha Designs.
-image: ./images/polygon-uminary.svg
+image: ./images/polygon-uminary.png
 image_caption: Photo by Sadanand Lowanshi
 author: Will Moody
 created: 2021-03-05T12:25:09.064Z

@@ -66,6 +66,7 @@ module.exports = function (api) {
       store.addMetadata('city', 'Norwich'),
       store.addMetadata('county', 'Norfolk'),
       store.addMetadata('postcode', 'NR13 5EJ'),
+      store.addMetadata('twitterSite', 'https://twitter.com/netlifyone'),
       store.addMetadata('twitterCreator', '@Netlifyone')
   })
 }

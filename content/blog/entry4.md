@@ -3,7 +3,7 @@ title: Is Earth Becoming Over Populated?
 tags: World, Population, Increase
 category: Envirnoment
 excerpt: Is earth able to support an increasing population?
-image: ./images/world-map.svg
+image: ./images/world-map.png
 image_caption: Photo by Menghan Zhang
 author: Kiki Dee
 created: 2021-03-05T12:25:09.064Z

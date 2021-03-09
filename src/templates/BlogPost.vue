@@ -34,7 +34,11 @@
         </ul>
 
         <figure>
-          <g-image :alt="$page.blog.image_caption" :src="$page.blog.image" />
+          <g-image
+            :alt="$page.blog.image_caption"
+            :src="$page.blog.image"
+            width="500"
+          />
         </figure>
 
         <div v-html="$page.blog.content"></div>
@@ -55,7 +59,7 @@ query($id: ID!, $previousElement: ID!, $nextElement: ID!) {
   blog(id: $id) {
     title
     path
-    image
+    image(width: 1000, quality: 90)
     image_caption
     excerpt
     content
@@ -88,6 +92,7 @@ query($id: ID!, $previousElement: ID!, $nextElement: ID!) {
 query {
   metadata {
     siteUrl
+    twitterSite
     twitterCreator
   }
 }
@@ -100,43 +105,66 @@ export default {
   components: {
     PostListItem,
   },
+  props: {
+    image: Object,
+  },
   metaInfo() {
     return {
       title: this.$page.blog.title,
       meta: [
         {
+          key: 'description',
           name: 'description',
           content: this.$page.blog.excerpt,
         },
         // open-graph tags
         {
+          key: 'og:title',
           property: 'og:title',
           content: this.$page.blog.title,
         },
         {
+          key: 'og:description',
           property: 'og:description',
           content: this.$page.blog.excerpt,
         },
         {
+          key: 'og:image',
           property: 'og:image',
-          content: this.$page.blog.image || '',
+          content: this.$static.metadata.siteUrl + this.$page.blog.image,
         },
         {
+          key: 'og:url',
           property: 'og:url',
           content: this.$static.metadata.siteUrl + this.$page.blog.path,
         },
         // twitter card
         {
           name: 'twitter:card',
-          content: this.$page.blog.image ? 'summary_large_image' : 'summary',
+          content: 'summary_large_image',
+        },
+        {
+          name: 'twitter:site',
+          content: this.$static.metadata.twitterSite,
         },
         {
           name: 'twitter:creator',
           content: this.$static.metadata.twitterCreator,
         },
-        { name: 'twitter:title', content: this.$page.blog.title },
-        { name: 'twitter:description', content: this.$page.blog.excerpt },
+        { key: 'twitter:image',
+          name: 'twitter:image',
+          content: this.$static.metadata.siteUrl + this.$page.blog.image,
+        },
+        {
+          name: 'twitter:title',
+          content: this.$page.blog.title,
+        },
+        {
+          name: 'twitter:description',
+          content: this.$page.blog.excerpt,
+        },
       ],
+      script: [{ src: 'https://platform.twitter.com/widgets.js', async: true }],
       // Some ld+json tags
       script: [
         {
@@ -145,8 +173,6 @@ export default {
             '@context': 'http://schema.org',
             '@type': 'BlogPosting',
             description: this.$page.blog.description,
-            datePublished: this.$page.blog.datePublished,
-            dateModified: this.$page.blog.dateModified,
             author: {
               name: this.$page.blog.author,
             },

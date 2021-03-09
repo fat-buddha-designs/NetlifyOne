@@ -3,7 +3,7 @@ title: How Much Do You Rely On Technology?
 tags: Technology, Needs, Tech
 category: Technology
 excerpt: So you don't think you rely on technology, think again I say.
-image: ./images/circuit-board.svg
+image: ./images/circuit-board.png
 image_caption: A circuit board
 author: Ron Dennis
 created: 2021-02-01T12:26:51.666Z
